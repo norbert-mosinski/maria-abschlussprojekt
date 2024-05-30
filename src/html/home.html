@@ -5,29 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./../styles/output.css" rel="stylesheet">
+  <script src="./../scripts/menu-controller.js"></script>
 </head>
 
 <body>
-  <div class="h-screen w-screen static">
-    <div class="flex flex-col w-full h-full items-center">
-      <image src="../assets/logo-compact.svg" class="w-14"></image>
-      <a href="#">Start</a>
-      <a href="./tender.html">Ausschreibung</a>
-      <a href="#">Anmeldung</a>
-      <a href="./schedule.html">Zeitplan</a>
-      <a href="#">Wettkampfordnung</a>
-      <a href="#">Streckenpläne</a>
-      <a href="#">Helferportal</a>
-      <a href="#">Ergebnistabellen 2024</a>
-      <a href="#">Archiv</a>
-      <a href="#">Sponsoren</a>
-      <a href="#">Kontakt</a>
+  <div id="menu" class="h-screen w-screen fixed hidden bg-white z-10 overflow-auto">
+    <div class="flex flex-col w-full h-full items-center px-20">
+      <image src="../assets/logo-compact.svg" class="w-14 mt-8 mb-20"></image>
+      <div class="flex flex-col items-center text-center gap-y-9 pb-8">
+        <a class="w-full px-2 text-primary text-2xl" href="#">Start</a>
+        <a class="w-full px-2 text-primary text-2xl" href="./tender.html">Ausschreibung</a>
+        <a class="w-full px-2 text-primary text-2xl" href="#">Anmeldung</a>
+        <a class="w-full px-2 text-primary text-2xl" href="./schedule.html">Zeitplan</a>
+        <a class="w-full px-2 text-primary text-2xl" href="#">Wettkampfordnung</a>
+        <a class="w-full px-2 text-primary text-2xl" href="#">Streckenpläne</a>
+        <a class="w-full px-2 text-primary text-2xl" href="#">Helferportal</a>
+        <a class="w-full px-2 text-primary text-2xl" href="#">Ergebnistabellen 2024</a>
+        <a class="w-full px-2 text-primary text-2xl" href="#">Archiv</a>
+        <a class="w-full px-2 text-primary text-2xl" href="#">Sponsoren</a>
+        <a class="w-full px-2 text-primary text-2xl" href="#">Kontakt</a>
+      </div>
     </div>
-    <image src="../assets/x-symbol.svg" class="absolute top-10 right-10 w-8 h-8"></image>
+    <button onclick="onMenuToggle()">
+      <image src="../assets/x-symbol.svg" class="absolute top-8 right-8 w-8 h-8"></image>
+    </button>
   </div>
   <div class="flex justify-between">
     <image src="../assets/logo.svg" class="w-32"></image>
-    <image src="../assets/burger-menu.svg" class="w-24"></image>
+    <button onclick="onMenuToggle()">
+      <image src="../assets/burger-menu.svg" class="w-24"></image>
+    </button>
   </div>
   <div class="relative">
     <image src="../assets/triathlon-teaser.jpg" class="w-screen"></image>
