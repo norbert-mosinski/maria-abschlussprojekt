@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./../styles/output.css" rel="stylesheet">
   <script src="./../scripts/menu-controller.js"></script>
+  <script src="./../scripts/timer-controller.js"></script>
+  <script src="./../scripts/settings.js"></script>
+  <script>
+    window.onload = function () {
+      runTimer(settings.marathonStart);
+    }
+  </script>
 </head>
 
 <body class="text-green-darkest text-lg">
@@ -44,10 +51,22 @@
     <div class=" flex items-center flex-col w-full h-full bg-primary/75 px-28 pt-24 pb-20">
       <h2 class="text-white text-4xl text-center">3. Waldtriathlon in Trainingen</h2>
       <div class="mt-12 flex flex-col gap-y-16">
-        <h1 id="timer-days" class="text-8xl font-bold text-white">16<span class="text-3xl ml-3">T</span></h1>
-        <h1 id="timer-hours" class="text-8xl font-bold text-white">05<span class="text-3xl ml-3">S</span></h1>
-        <h1 id="timer-minutes" class="text-8xl font-bold text-white">24<span class="text-3xl ml-3">M</span></h1>
-        <h1 id="timer-seconds" class="text-8xl font-bold text-white">27<span class="text-3xl ml-3">S</span></h1>
+        <div class="flex flex-row items-baseline">
+        <h1 id="timer-days" class="text-8xl font-bold text-white">16</h1>
+        <span class="text-3xl ml-3 text-white">T</span>
+        </div>
+        <div class="flex flex-row items-baseline">
+        <h1 id="timer-hours" class="text-8xl font-bold text-white">05</h1>
+        <span class="text-3xl ml-3 text-white">S</span>
+        </div>
+        <div class="flex flex-row items-baseline">
+        <h1 id="timer-minutes" class="text-8xl font-bold text-white">24</h1>
+        <span class="text-3xl ml-3 text-white">M</span>
+        </div>
+        <div class="flex flex-row items-baseline">
+        <h1 id="timer-seconds" class="text-8xl font-bold text-white">27</h1>
+        <span class="text-3xl ml-3 text-white">S</span>
+        </div>
       </div>
       <button class="mt-14 bg-yellow px-10 py-2">Jetzt anmelden</button>
     </div>
@@ -82,7 +101,7 @@
             <div class="w-20 h-8">
               <image src="../assets/content-box.jpg" class="w-full h-full"></image>
             </div>
-            <p class="absolute top-0 left-0 w-full h-full flex justify-center items-center">A</p>
+            <p class="absolute top-0 left-0 w-full h-full flex justify-center items-center text-xl text-white">A</p>
           </div>
           <p>Volkstriathlon klassisch (für Erwachsene)</p>
         </div>
@@ -91,7 +110,7 @@
             <div class="w-20 h-8">
               <image src="../assets/content-box.jpg" class="w-full h-full"></image>
             </div>
-            <p class="absolute top-0 left-0 w-full h-full flex justify-center items-center">B</p>
+            <p class="absolute top-0 left-0 w-full h-full flex justify-center items-center text-xl text-white">B</p>
           </div>
 
           <p>Schnuppertriathlon (für Jugendliche 12–18 Jahre)</p>
@@ -101,7 +120,7 @@
             <div class="w-20 h-8">
               <image src="../assets/content-box.jpg" class="w-full h-full"></image>
             </div>
-            <p class="absolute top-0 left-0 w-full h-full flex justify-center items-center">C</p>
+            <p class="absolute top-0 left-0 w-full h-full flex justify-center items-center text-xl text-white">C</p>
           </div>
           <p>Kindertriathlon (ab 9 Jahren)</p>
         </div>
@@ -110,7 +129,7 @@
             <div class="w-20 h-8">
               <image src="../assets/content-box.jpg" class="w-full h-full"></image>
             </div>
-            <p class="absolute top-0 left-0 w-full h-full flex justify-center items-center">D</p>
+            <p class="absolute top-0 left-0 w-full h-full flex justify-center items-center text-xl text-white">D</p>
           </div>
           <p>Familienstaffel (3 Personen, davon mindestens 1 Erwachsener und 1 Kind)</p>
         </div>
