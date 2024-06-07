@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./../styles/output.css" rel="stylesheet">
+    <script src="./../scripts/menu-controller.js"></script>
+</head>
+
+<body class="text-green-darkest text-lg min-h-screen font-nuito-sans">
+    <div id="menu" class="h-screen w-screen fixed hidden bg-green-darkest z-10 overflow-auto">
+        <div class="flex flex-col w-full h-full px-4">
+            <image src="../assets/images/logo-compact.svg" class="w-14 mt-16 mb-7"></image>
+            <div class="flex flex-col gap-y-5 pb-20 text-2xl text-white">
+                <a class="w-full px-2" href="./home.html">START</a>
+                <a class="w-full px-2" href="./tender.html">AUSSCHREIBUNG</a>
+                <a class="w-full px-2" href="./schedule.html">ZEITPLAN</a>
+                <a class="w-full px-2" href="#">WETTKAMPFORDNUNG</a>
+                <a class="w-full px-2" href="./route-map.html">STRECKENPLÄNE</a>
+                <a class="w-full px-2" href="#">HELFERPORTAL</a>
+                <a class="w-full px-2" href="#">ERGEBNISTABELLEN 2024</a>
+                <a class="w-full px-2" href="#">ARCHIV</a>
+                <a class="w-full px-2" href="#">SPONSOREN</a>
+                <a class="w-full px-2" href="#">KONTAKT</a>
+                <a class="w-full px-2" href="#">ANMELDUNG</a>
+            </div>
+        </div>
+        <button onclick="onMenuToggle()">
+            <image src="../assets/images/x-symbol.svg" class="absolute top-6 right-4 w-8 h-8"></image>
+        </button>
+    </div>
+    <div class="flex justify-between py-6 px-4 h-24 items-center">
+        <image src="../assets/images/logo.svg" class="h-full py-2 pl-1"></image>
+        <button onclick="onMenuToggle()" class="w-12 h-12">
+            <image src="../assets/images/burger-menu.svg" class="w-full h-full"></image>
+        </button>
+    </div>
+
+    <div class="mb-20 mt-9 px-4">
+        <h1 class="text-primary text-5xl font-bold font-fira-sans">IMPRESSUM</h1>
+        <div class="mt-5 flex flex-col gap-y-12">
+        <div class="text-green-darkest">
+            <h5 class="font-bold">SV Trainingen e. V.</h5>
+            <p>Übungsstraße 1</p>
+            <p>98765 Trainingen</p>
+        </div>
+
+        <div class="text-green-darkest">
+            <h5 class="font-bold">Vertretungsberechtigter Vorstand:</h5>
+            <p>Ulrike Maschter</p>
+            <p>Tel: 01234/5678-11</p>
+            <p>Amtsgericht Lörrach. VR 1001</p>
+        </div>
+    </div>
+    </div>
+    <div class="flex md:flex-row flex-col md:justify-between items-center gap-y-10 bg-primary py-14">
+        <image src="../assets/images/logo.svg" class="w-48"></image>
+        <div class=" flex flex-col gap-y-4 text-white text-xl items-center">
+            <a href="#">Kontakt</a>
+            <a href="#">Datenschutz</a>
+            <a href="./impressum.html">Impressum</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

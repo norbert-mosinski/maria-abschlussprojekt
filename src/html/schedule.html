@@ -8,66 +8,56 @@
     <script src="./../scripts/menu-controller.js"></script>
 </head>
 
-<body class="text-green-darkest text-lg">
-    <div id="menu" class="h-screen w-screen fixed hidden bg-white z-10 overflow-auto">
-        <div class="flex flex-col w-full h-full items-center px-20">
-            <image src="../assets/logo-compact.svg" class="w-14 mt-8 mb-20"></image>
-            <div class="flex flex-col items-center text-center gap-y-9 pb-8">
-                <a class="w-full px-2 text-primary text-2xl" href="./home.html">Start</a>
-                <a class="w-full px-2 text-primary text-2xl" href="./tender.html">Ausschreibung</a>
-                <a class="w-full px-2 text-primary text-2xl" href="#">Anmeldung</a>
-                <a class="w-full px-2 text-primary text-2xl" href="#">Zeitplan</a>
-                <a class="w-full px-2 text-primary text-2xl" href="#">Wettkampfordnung</a>
-                <a class="w-full px-2 text-primary text-2xl" href="#">Streckenpläne</a>
-                <a class="w-full px-2 text-primary text-2xl" href="#">Helferportal</a>
-                <a class="w-full px-2 text-primary text-2xl" href="#">Ergebnistabellen 2024</a>
-                <a class="w-full px-2 text-primary text-2xl" href="#">Archiv</a>
-                <a class="w-full px-2 text-primary text-2xl" href="#">Sponsoren</a>
-                <a class="w-full px-2 text-primary text-2xl" href="#">Kontakt</a>
+<body class="text-green-darkest text-lg font-nuito-sans min-h-screen">
+    <div id="menu" class="h-screen w-screen fixed hidden bg-green-darkest z-10 overflow-auto">
+        <div class="flex flex-col w-full h-full px-4">
+            <image src="../assets/images/logo-compact.svg" class="w-14 mt-16 mb-7"></image>
+            <div class="flex flex-col gap-y-5 pb-20 text-2xl text-white">
+                <a class="w-full px-2" href="./home.html">START</a>
+                <a class="w-full px-2" href="./tender.html">AUSSCHREIBUNG</a>
+                <a class="w-full px-2 text-yellow" href="./schedule.html">ZEITPLAN</a>
+                <a class="w-full px-2" href="#">WETTKAMPFORDNUNG</a>
+                <a class="w-full px-2" href="./route-map.html">STRECKENPLÄNE</a>
+                <a class="w-full px-2" href="#">HELFERPORTAL</a>
+                <a class="w-full px-2" href="#">ERGEBNISTABELLEN 2024</a>
+                <a class="w-full px-2" href="#">ARCHIV</a>
+                <a class="w-full px-2" href="#">SPONSOREN</a>
+                <a class="w-full px-2" href="#">KONTAKT</a>
+                <a class="w-full px-2" href="#">ANMELDUNG</a>
             </div>
         </div>
         <button onclick="onMenuToggle()">
-            <image src="../assets/x-symbol.svg" class="absolute top-8 right-8 w-8 h-8"></image>
+            <image src="../assets/images/x-symbol.svg" class="absolute top-6 right-4 w-8 h-8"></image>
         </button>
     </div>
     <div class="flex justify-between py-6 px-4 h-24 items-center">
-        <image src="../assets/logo.svg" class="h-full py-2 pl-1"></image>
+        <image src="../assets/images/logo.svg" class="h-full py-2 pl-1"></image>
         <button onclick="onMenuToggle()" class="w-12 h-12">
-            <image src="../assets/burger-menu.svg" class="w-full h-full"></image>
+            <image src="../assets/images/burger-menu.svg" class="w-full h-full"></image>
         </button>
     </div>
 
     <div class="flex md:flex-row flex-col mb-20 mt-9 bg-green-darkest text-white gap-y-14">
         <div class="w-full">
-            <h1 class="mt-14 text-4xl">ZEITPLAN</h1>
+            <h1 class="mt-14 text-4xl font-fira-sans">ZEITPLAN</h1>
             <div class="mt-8 flex flex-col gap-y-11">
                 <div class="flex md:flex-row flex-col">
                     <div class="relative w-32 mt-3">
-                        <image src="../assets/content-box.jpg" class="w-32 h-6"></image>
+                        <image src="../assets/images/content-box.jpg" class="w-32 h-6"></image>
                         <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">Ab 9 Uhr</p>
                     </div>
                     <p class="w-full">Startnummernausgabe, Marktplatz</p>
                 </div>
                 <div class="flex md:flex-row flex-col">
                     <div class="relative w-32 mt-3">
-                        <image src="../assets/content-box.jpg" class="w-32 h-6"></image>
+                        <image src="../assets/images/content-box.jpg" class="w-32 h-6"></image>
                         <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">10 Uhr</p>
                     </div>
                     <p class="w-full">Auftakt mit Musik, Marktplatz (Es spielen die Traininger Spatzen.)</p>
                 </div>
                 <div class="flex md:flex-row flex-col">
                     <div class="relative w-32 mt-3">
-                        <image src="../assets/content-box.jpg" class="w-32 h-6"></image>
-                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">10:30 Uhr</p>
-                    </div>
-                    <div class="w-full">
-                        <p>Es kann losgehen: Wettkämpfe C und D</p>
-                        <p>Start Schwimmen: Waldbad</p>
-                    </div>
-                </div>
-                <div class="flex md:flex-row flex-col">
-                    <div class="relative w-32 mt-3">
-                        <image src="../assets/content-box.jpg" class="w-32 h-6"></image>
+                        <image src="../assets/images/content-box.jpg" class="w-32 h-6"></image>
                         <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">10:30 Uhr</p>
                     </div>
                     <div class="w-full">
@@ -82,7 +72,7 @@
                 </div>
                 <div class="flex md:flex-row flex-col">
                     <div class="relative w-32 mt-3">
-                        <image src="../assets/content-box.jpg" class="w-32 h-6"></image>
+                        <image src="../assets/images/content-box.jpg" class="w-32 h-6"></image>
                         <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">13 Uhr</p>
                     </div>
                     <div class="w-full">
@@ -92,7 +82,7 @@
                 </div>
                 <div class="flex md:flex-row flex-col">
                     <div class="relative w-32 mt-3">
-                        <image src="../assets/content-box.jpg" class="w-32 h-6"></image>
+                        <image src="../assets/images/content-box.jpg" class="w-32 h-6"></image>
                         <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">15 Uhr</p>
                     </div>
                     <div class="w-full">
@@ -107,29 +97,29 @@
                 </div>
                 <div class="flex md:flex-row flex-col">
                     <div class="relative w-32 mt-3">
-                        <image src="../assets/content-box.jpg" class="w-32 h-6"></image>
+                        <image src="../assets/images/content-box.jpg" class="w-32 h-6"></image>
                         <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">18 Uhr</p>
                     </div>
                     <p class="w-full">Zielschluss</p>
                 </div>
                 <div class="flex md:flex-row flex-col">
                     <div class="relative w-32 mt-3">
-                        <image src="../assets/content-box.jpg" class="w-32 h-6"></image>
+                        <image src="../assets/images/content-box.jpg" class="w-32 h-6"></image>
                         <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">18:15 Uhr</p>
                     </div>
                     <p class="w-full">Siegerehrung mit Musik, Bühne vor dem Waldbad. Es legt auf: DJ Yankee</p>
                 </div>
             </div>
         </div>
-        <image class="w-1/4 hidden" src="../assets/stopwatch-portrait.jpg"></image>
-        <image class="w-full md:hidden" src="../assets/stopwatch-square.jpg"></image>
+        <image class="w-1/4 hidden" src="../assets/images/stopwatch-portrait.jpg"></image>
+        <image class="w-full md:hidden" src="../assets/images/stopwatch-square.jpg"></image>
     </div>
     <div class="flex md:flex-row flex-col md:justify-between items-center gap-y-10 bg-primary py-14">
-        <image src="../assets/logo.svg" class="w-48"></image>
+        <image src="../assets/images/logo.svg" class="w-48"></image>
         <div class=" flex flex-col gap-y-4 text-white text-xl items-center">
             <a href="#">Kontakt</a>
             <a href="#">Datenschutz</a>
-            <a href="#">Impressum</a>
+            <a href="./impressum.html">Impressum</a>
         </div>
     </div>
 
