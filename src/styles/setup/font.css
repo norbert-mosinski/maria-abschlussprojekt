@@ -1,15 +1,29 @@
 @font-face {
     font-family: 'fira-sans';
-    src: url("../../assets/fonts/fira-sans-bold.ttf") format('truetype');
-  }
+    font-weight: 700;
+    src: url("/src/assets/fonts/fira-sans-condensed-bold.ttf") format('truetype');
+    }
   
   @font-face {
     font-family: 'nuito-sans';
-    src: url("../../assets/fonts/nuito-sans-regular.ttf") format('truetype');
+    font-weight: 400;
+    src: url("/src/assets/fonts/nuito-sans-regular.ttf") format('truetype');
   }
 
   @font-face {
     font-family: 'nuito-sans';
-    font-weight: bold;
-    src: url("../../assets/fonts/nuito-sans-semi-bold.ttf") format('truetype');
+    font-weight: 600;
+    src: url("/src/assets/fonts/nuito-sans-semi-bold.ttf") format('truetype');
+  }
+
+  @font-face {
+    font-family: 'nuito-sans';
+    font-weight: 700;
+    src: url("/src/assets/fonts/nuito-sans-bold.ttf") format('truetype');
+  }
+
+  @font-face {
+    font-family: 'nuito-sans';
+    font-weight: 800;
+    src: url("/src/assets/fonts/nuito-sans-extra-bold.ttf") format('truetype');
   }

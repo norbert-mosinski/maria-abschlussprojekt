@@ -5,7 +5,7 @@
     .timer-entry-text {
         @apply text-7xl mobile:text-8xl font-bold text-white;
     }
-    .timer-entry-type-text {
+    .timer-entry-text-type {
         @apply text-3xl ml-3 text-white
     }
   }

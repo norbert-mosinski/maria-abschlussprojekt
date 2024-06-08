@@ -1,5 +1,6 @@
 @import './setup/index.css';
 @import './appearances/index.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

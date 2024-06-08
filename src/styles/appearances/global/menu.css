@@ -1,9 +1,6 @@
 @layer components {
-    .btn-primary {
-      @apply mt-14 bg-yellow px-8 py-2 font-bold;
-    }
     .menu {
-      @apply h-screen w-screen fixed bg-green-darkest z-10 overflow-auto;
+      @apply h-screen w-screen fixed bg-secondary z-10 overflow-auto;
     }
 
     .menu-inner {
@@ -18,15 +15,15 @@
       @apply flex flex-col gap-y-5 pb-20 text-2xl text-white font-fira-sans;
     }
 
-    .menu-entry-link {
+    .menu-link-entry {
       @apply w-full px-2;
     }
 
-    .menu-entry-active-link {
-      @apply text-yellow;
+    .menu-link-active-entry {
+      @apply text-primary;
     }
 
-    .menu-close-img {
+    .menu-img-close {
       @apply absolute top-6 right-4 w-8 h-8;
     }
   }

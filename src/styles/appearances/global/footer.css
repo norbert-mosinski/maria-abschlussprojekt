@@ -1,6 +1,6 @@
 @layer components {
     .footer {
-        @apply flex md:flex-row flex-col md:justify-between items-center gap-y-10 bg-primary py-14;
+        @apply flex mobile:flex-row flex-col mobile:justify-between items-center gap-y-10 bg-primary py-14;
     }
 
     .footer-img {

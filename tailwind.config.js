@@ -6,11 +6,15 @@ module.exports = {
       colors: {
         "primary": "#bf4c0c",
         "secondary": "#3d503a",
-        "yellow": "#FFFF00",
+        "action": "#FFFF00",
         "green": {
           "darkest": "#2e332c"
         },
       },
+      fontSize: {
+        "5xl": "2.625rem",
+        "3xl": "1.75rem"
+      }
     },
     screens: {
       mobile: '576px',

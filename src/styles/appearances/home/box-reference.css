@@ -1,6 +1,6 @@
 @layer components {
     .box-reference {
-      @apply bg-green-darkest;
+      @apply bg-secondary;
     }
 
     .box-reference-text {
