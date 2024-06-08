@@ -14,6 +14,10 @@ module.exports = {
       fontSize: {
         "5xl": "2.625rem",
         "3xl": "1.75rem"
+      },
+      spacing: {
+        4: "0.935rem",
+        18: "4.375rem",
       }
     },
     screens: {

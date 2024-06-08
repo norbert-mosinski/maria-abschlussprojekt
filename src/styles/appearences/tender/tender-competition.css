@@ -4,7 +4,7 @@
     }
 
     .tender-competition-header {
-        @apply flex flex-row gap-x-6 items-center;
+        @apply flex flex-row gap-x-6 mobile:gap-x-6 items-center;
     }
 
     .tender-competition-header-designation-inner {
@@ -12,11 +12,11 @@
     }
 
     .tender-competition-header-designation-img {
-        @apply mobile:w-28 w-20 h-12;
+        @apply mobile:w-28 w-16 h-12;
     }
 
     .tender-competition-header-designation-text {
-        @apply absolute top-0 left-0 w-full h-full flex justify-center items-center text-4xl;
+        @apply absolute top-0 left-0 w-full h-full flex justify-center items-center text-4xl mobile:text-5xl;
     }
 
     .tender-competition-header-title {
@@ -24,15 +24,15 @@
     }
 
     .tender-competition-header-title-text {
-        @apply font-bold;
+        @apply font-bold mobile:text-xl;
     }
 
     .tender-competition-entries {
-        @apply flex flex-col mt-6 mb-9 mobile:px-20 px-7 gap-y-6;
+        @apply flex flex-col mt-5 mobile:mt-6 mb-9 mobile:px-20 px-7 gap-y-6;
     }
 
     .tender-competition-entry {
-        @apply flex flex-row gap-x-7;
+        @apply flex flex-row gap-x-6 mobile:gap-x-7;
     }
 
     .tender-competition-entry-img {

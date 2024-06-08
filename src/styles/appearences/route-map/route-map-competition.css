@@ -1,10 +1,18 @@
 @layer components {
+    .route-map {
+        @apply w-full mt-8 mobile:mt-12 h-72 bg-red-700;
+    }
+
     .route-map-competition {
-        @apply bg-secondary text-white px-5 py-8 mt-6;
+        @apply bg-secondary text-white px-4 mobile:px-5 py-8 mt-6;
     }
 
     .route-map-competition-title-text {
-        @apply font-bold;
+        @apply font-bold text-xl;
+    }
+
+    .route-map-competition-title-text-br {
+        @apply mobile:hidden;
     }
 
     .route-map-competition-content {
@@ -12,7 +20,7 @@
     }
 
     .route-map-competition-content-entry {
-        @apply flex flex-row gap-x-4;
+        @apply flex flex-row gap-x-4 mobile:gap-x-6;
     }
 
     .route-map-competition-content-entry-designation {

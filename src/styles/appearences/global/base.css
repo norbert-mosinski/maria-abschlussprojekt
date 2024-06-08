@@ -1,6 +1,6 @@
 @layer base {
     body {
-      @apply text-lg font-nuito-sans min-h-screen no-scrollbar text-green-darkest;
+      @apply text-lg font-nuito-sans min-h-screen gap-y-18 flex flex-col justify-between no-scrollbar text-green-darkest;
     }
 
     h1 {

@@ -9,235 +9,267 @@
 </head>
 
 <body>
-    <div id="menu" class="global-menu hidden">
-        <div class="global-menu-inner">
-            <img src="../assets/images/logo-compact.svg" class="global-menu-img"></img>
-            <div class="global-menu-entry">
-                <a class="global-menu-link-entry" href="./home.html">START</a>
-                <a class="global-menu-link-entry global-menu-link-active-entry" href="./tender.html">AUSSCHREIBUNG</a>
-                <a class="global-menu-link-entry" href="./schedule.html">ZEITPLAN</a>
-                <a class="global-menu-link-entry" href="#">WETTKAMPFORDNUNG</a>
-                <a class="global-menu-link-entry" href="./route-map.html">STRECKENPLÄNE</a>
-                <a class="global-menu-link-entry" href="#">HELFERPORTAL</a>
-                <a class="global-menu-link-entry" href="#">ERGEBNISTABELLEN 2024</a>
-                <a class="global-menu-link-entry" href="#">ARCHIV</a>
-                <a class="global-menu-link-entry" href="#">SPONSOREN</a>
-                <a class="global-menu-link-entry" href="#">KONTAKT</a>
-                <a class="global-menu-link-entry text-action" href="#">ANMELDUNG</a>
-            </div>
-        </div>
-        <button onclick="onMenuToggle()">
-            <img src="../assets/images/x-symbol.svg" class="global-menu-img-close"></img>
-        </button>
-    </div>
-    <div class="global-header">
-        <img src="../assets/images/logo.svg" class="global-header-img-logo"></img>
-        <button onclick="onMenuToggle()" class="global-header-btn-global-menu">
-            <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu"></img>
-        </button>
-    </div>
-    <div class="relative">
-        <picture>
-            <source srcset="../assets/images/people-celebrating-landscape.jpg" media="(min-width: 1400px)">
-            <source srcset="../assets/images/people-celebrating-square.jpg" media="(min-width: 992px)">
-            <img src="../assets/images/people-celebrating-portrait.jpg" class="global-bg-img"></img>
-        </picture>
-        <div
-            class="flex flex-col tablet:justify-end w-full h-full px-12 pt-32 pb-44 mobile:pb-96 bg-primary/75 text-white">
-            <h1>AUSSCHREIBUNG</h1>
-            <div class="flex flex-col gap-y-9 items-start mt-5">
-                <div>
-                    <h3 class="mt-2">TERMIN</h3>
-                    <p class="font-bold">Sonntag, 15. September 2024</p>
-                    <p>10 Uhr Auftakt mit Musik, Marktplatz anschl. Wettkämpfe (zeitlich
-                        gestaffelt)</p>
-                </div>
-                <div>
-                    <h3 class="mt-2">TREFFPUNKT</h3>
-                    <p class="font-bold">Waldbad</p>
-                    <p>18 Uhr Siegerehrung mit Musik, Bühne vor dem Waldbad</p>
+    <div>
+        <div id="menu" class="global-menu hidden">
+            <div class="global-menu-inner">
+                <img src="../assets/images/logo-compact.svg" class="global-menu-img"></img>
+                <div class="global-menu-entry">
+                    <a class="global-menu-link-entry" href="./home.html">START</a>
+                    <a class="global-menu-link-entry global-menu-link-active-entry"
+                        href="./tender.html">AUSSCHREIBUNG</a>
+                    <a class="global-menu-link-entry" href="./schedule.html">ZEITPLAN</a>
+                    <a class="global-menu-link-entry" href="#">WETTKAMPFORDNUNG</a>
+                    <a class="global-menu-link-entry" href="./route-map.html">STRECKENPLÄNE</a>
+                    <a class="global-menu-link-entry" href="#">HELFERPORTAL</a>
+                    <a class="global-menu-link-entry" href="#">ERGEBNISTABELLEN 2024</a>
+                    <a class="global-menu-link-entry" href="#">ARCHIV</a>
+                    <a class="global-menu-link-entry" href="#">SPONSOREN</a>
+                    <a class="global-menu-link-entry" href="#">KONTAKT</a>
+                    <a class="global-menu-link-entry text-action" href="#">ANMELDUNG</a>
                 </div>
             </div>
-            <div>
-                <button class="mt-11 global-btn-primary">Jetzt anmelden</button>
-            </div>
+            <button onclick="onMenuToggle()">
+                <img src="../assets/images/x-symbol.svg" class="global-menu-img-close"></img>
+            </button>
         </div>
-    </div>
 
-    <div class="px-4 my-14">
-        <h2 class="text-secondary">WETTKÄMPFE</h2>
-        <div class="flex flex-col gap-y-20 mt-6">
-            <div class="tender-competition">
-                <div>
-                    <div class="tender-competition-header">
-                        <div>
-                            <div class="tender-competition-header-designation-inner">
-                                <img src="../assets/images/content-box-1-flat-border.jpg"
-                                    class="tender-competition-header-designation-img"></img>
-                                <p class="tender-competition-header-designation-text">
-                                    A
-                                </p>
+        <header class="global-header">
+            <img src="../assets/images/logo.svg" class="global-header-img-logo"></img>
+            <button onclick="onMenuToggle()" class="global-header-btn-global-menu">
+                <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu"></img>
+            </button>
+        </header>
+
+        <main>
+            <div class="relative">
+                <picture>
+                    <source srcset="../assets/images/people-celebrating-landscape.jpg" media="(min-width: 1400px)">
+                    <source srcset="../assets/images/people-celebrating-square.jpg" media="(min-width: 992px)">
+                    <img src="../assets/images/people-celebrating-portrait.jpg" class="global-bg-img"></img>
+                </picture>
+                <div
+                    class="flex flex-col items-center tablet:justify-end w-full h-[80vh] pt-32 bg-primary/75 text-white">
+                    <div class="w-5/6 mobile:w-4/6">
+                        <h1>AUSSCHREIBUNG</h1>
+                        <div class="flex flex-col gap-y-7 items-start mt-5">
+                            <div>
+                                <h3 class="mt-2">TERMIN</h3>
+                                <p class="font-bold">Sonntag, 15. September 2024</p>
+                                <p>10 Uhr Auftakt mit Musik, Marktplatz <br><span class="tracking-tight mobile:tracking-normal">anschl.
+                                        Wettkämpfe (zeitlich
+                                        gestaffelt)</span></p>
+                            </div>
+                            <div>
+                                <h3 class="mt-2">TREFFPUNKT</h3>
+                                <p class="font-bold">Waldbad</p>
+                                <p>18 Uhr Siegerehrung mit Musik, <br>Bühne vor dem Waldbad</p>
                             </div>
                         </div>
-                        <div class="tender-competition-header-title">
-                            <p class="tender-competition-header-title-text">Volkstriathlon klassisch</p>
-                            <p class="tender-competition-header-title-text">(für Erwachsene)</p>
-                        </div>
-                    </div>
-                    <div class="tender-competition-entries">
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/swimming-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>600 m Schwimmen</p>
-                        </div>
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/running-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>6 km Laufen</p>
-                        </div>
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/cycling-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>20 km Radfahren</p>
-                        </div>
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/cycling-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>Startgeld: 35 Euro (*)</p>
+                        <div>
+                            <button class="mt-11 global-btn-primary">Jetzt anmelden</button>
                         </div>
                     </div>
                 </div>
-                <img src="../assets/images/professional-biker.jpg"></img>
             </div>
 
-            <div class="tender-competition">
-                <div>
-                    <div class="tender-competition-header">
+            <div class="px-4 mt-14">
+                <h2 class="text-secondary">WETTKÄMPFE</h2>
+                <div class="flex flex-col gap-y-20 mt-5">
+                    <div class="tender-competition">
                         <div>
-                            <div class="tender-competition-header-designation-inner">
-                                <img src="../assets/images/content-box-1-flat-border.jpg"
-                                    class="tender-competition-header-designation-img"></img>
-                                <p class="tender-competition-header-designation-text">
-                                    B
-                                </p>
+                            <div class="tender-competition-header">
+                                <div>
+                                    <div class="tender-competition-header-designation-inner">
+                                        <img src="../assets/images/content-box-1-flat-border.jpg"
+                                            class="tender-competition-header-designation-img"></img>
+                                        <p class="tender-competition-header-designation-text">
+                                            A
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tender-competition-header-title">
+                                    <p class="tender-competition-header-title-text">Volkstriathlon klassisch</p>
+                                    <p class="tender-competition-header-title-text">(für Erwachsene)</p>
+                                </div>
+                            </div>
+                            <div class="tender-competition-entries">
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/swimming-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>600 m Schwimmen</p>
+                                </div>
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/running-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>6 km Laufen</p>
+                                </div>
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/cycling-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>20 km Radfahren</p>
+                                </div>
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/cycling-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>Startgeld: 35 Euro (*)</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="tender-competition-header-title">
-                            <p class="tender-competition-header-title-text">Schnuppertriathlon</p>
-                            <p class="tender-competition-header-title-text">(für Jugendliche 12–18 Jahre)</p>
-                        </div>
+                        <img src="../assets/images/professional-biker.jpg"></img>
                     </div>
-                    <div class="tender-competition-entries">
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/swimming-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>300 m Schwimmen</p>
-                        </div>
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/running-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>3 km Laufen</p>
-                        </div>
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/cycling-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>10 km Radfahren</p>
-                        </div>
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/cycling-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>Startgeld: 20 Euro (*)</p>
-                        </div>
-                    </div>
-                </div>
-                <img src="../assets/images/girl-with-helmet.jpg"></img>
-            </div>
 
-            <div class="tender-competition">
-                <div>
-                    <div class="tender-competition-header">
+                    <div class="tender-competition">
                         <div>
-                            <div class="tender-competition-header-designation-inner">
-                                <img src="../assets/images/content-box-1-flat-border.jpg"
-                                    class="tender-competition-header-designation-img"></img>
-                                <p class="tender-competition-header-designation-text">
-                                    C
-                                </p>
+                            <div class="tender-competition-header">
+                                <div>
+                                    <div class="tender-competition-header-designation-inner">
+                                        <img src="../assets/images/content-box-1-flat-border.jpg"
+                                            class="tender-competition-header-designation-img"></img>
+                                        <p class="tender-competition-header-designation-text">
+                                            B
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tender-competition-header-title">
+                                    <p class="tender-competition-header-title-text">Schnuppertriathlon</p>
+                                    <p class="tender-competition-header-title-text tracking-tight mobile:tracking-normal">(für Jugendliche 12–18 Jahre)</p>
+                                </div>
+                            </div>
+                            <div class="tender-competition-entries">
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/swimming-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>300 m Schwimmen</p>
+                                </div>
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/running-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>3 km Laufen</p>
+                                </div>
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/cycling-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>10 km Radfahren</p>
+                                </div>
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/cycling-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>Startgeld: 20 Euro (*)</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="tender-competition-header-title">
-                            <p class="tender-competition-header-title-text">Kindertriathlon</p>
-                            <p class="tender-competition-header-title-text">(ab 9 Jahren)</p>
-                        </div>
+                        <img src="../assets/images/girl-with-helmet.jpg"></img>
                     </div>
-                    <div class="tender-competition-entries">
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/swimming-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>100 m Schwimmen</p>
-                        </div>
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/running-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>500 m Laufen</p>
-                        </div>
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/cycling-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>2,5 km Radfahren</p>
-                        </div>
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/cycling-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>Startgeld: Spende (*)</p>
-                        </div>
-                    </div>
-                </div>
-                <img src="../assets/images/kid-arriving-at-finish.jpg"></img>
-            </div>
 
-            <div class="tender-competition">
-                <div>
-                    <div class="tender-competition-header">
-                        <div class="tender-competition-header-designation-inner">
-                            <img src="../assets/images/content-box-1-flat-border.jpg"
-                                class="tender-competition-header-designation-img"></img>
-                            </img>
-                            <p class="tender-competition-header-designation-text">
-                                D
-                            </p>
+                    <div class="tender-competition">
+                        <div>
+                            <div class="tender-competition-header">
+                                <div>
+                                    <div class="tender-competition-header-designation-inner">
+                                        <img src="../assets/images/content-box-1-flat-border.jpg"
+                                            class="tender-competition-header-designation-img"></img>
+                                        <p class="tender-competition-header-designation-text">
+                                            C
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tender-competition-header-title">
+                                    <p class="tender-competition-header-title-text">Kindertriathlon</p>
+                                    <p class="tender-competition-header-title-text">(ab 9 Jahren)</p>
+                                </div>
+                            </div>
+                            <div class="tender-competition-entries">
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/swimming-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>100 m Schwimmen</p>
+                                </div>
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/running-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>500 m Laufen</p>
+                                </div>
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/cycling-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>2,5 km Radfahren</p>
+                                </div>
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/cycling-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>Startgeld: Spende (*)</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tender-competition-header-title">
-                            <p class="tender-competition-header-title-text">Familienstaffel (3 Personen, davon mind. 1 Erwachsener und 1
-                                Kind)
-                            </p>
-                        </div>
+                        <img src="../assets/images/kid-arriving-at-finish.jpg"></img>
                     </div>
-                    <div class="tender-competition-entries">
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/swimming-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>150 m Schwimmen</p>
-                        </div>
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/running-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>1,5 km Laufen</p>
-                        </div>
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/cycling-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>5 km Radfahren</p>
-                        </div>
-                        <div class="tender-competition-entry">
-                            <img src="../assets/images/cycling-graphic.jpg" class="tender-competition-entry-img"></img>
-                            <p>Startgeld: 20 Euro (*)</p>
-                        </div>
-                    </div>
-                </div>
-                <img src="../assets/images/family-biker.jpg"></img>
-            </div>
 
-        </div>
-        <p class="text-xl my-8">(* jetzt mit 10 Prozent Frühbucherrabatt)</p>
-        <h2 class="text-primary tracking-tighter">RAHMENPROGRAMM</h2>
-        <p class="mt-3">Aufwärm-Aerobic (für alle Interessierten), Musik, Getränke- und Imbiss-Stationen, Verkauf von
-            bedruckten
-            T-Shirts, Stickern und Kaffeebechern</p>
+                    <div class="tender-competition">
+                        <div>
+                            <div class="tender-competition-header">
+                                <div class="tender-competition-header-designation-inner">
+                                    <img src="../assets/images/content-box-1-flat-border.jpg"
+                                        class="tender-competition-header-designation-img"></img>
+                                    </img>
+                                    <p class="tender-competition-header-designation-text">
+                                        D
+                                    </p>
+                                </div>
+                                <div class="tender-competition-header-title">
+                                    <p class="tender-competition-header-title-text tracking-tighter mobile:tracking-normal text-[17px] mobile:text-xl">Familienstaffel (3 Personen, davon
+                                        mind.
+                                        1
+                                        Erwachsener und 1
+                                        Kind)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tender-competition-entries">
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/swimming-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>150 m Schwimmen</p>
+                                </div>
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/running-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>1,5 km Laufen</p>
+                                </div>
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/cycling-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>5 km Radfahren</p>
+                                </div>
+                                <div class="tender-competition-entry">
+                                    <img src="../assets/images/cycling-graphic.jpg"
+                                        class="tender-competition-entry-img"></img>
+                                    <p>Startgeld: 20 Euro (*)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="../assets/images/family-biker.jpg"></img>
+                    </div>
+
+                </div>
+                <p class="text-xl mb-8 mt-6">(* jetzt mit 10 Prozent Frühbucherrabatt)</p>
+                <h2 class="text-primary">RAHMENPROGRAMM</h2>
+                <p class="mt-3">Aufwärm-Aerobic (für alle Interessierten), Musik, Getränke- und Imbiss-Stationen,
+                    Verkauf
+                    von
+                    bedruckten
+                    T-Shirts, Stickern und Kaffeebechern</p>
+            </div>
+        </main>
     </div>
-    <div class="global-footer">
+
+    <footer class="global-footer">
         <img src="../assets/images/logo.svg" class="global-footer-img"></img>
         <div class="global-footer-entries">
             <a href="#">Kontakt</a>
             <a href="#">Datenschutz</a>
             <a href="./impressum.html">Impressum</a>
         </div>
-    </div>
+    </footer>
 
 </body>
 

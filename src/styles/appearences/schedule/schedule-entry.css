@@ -16,6 +16,14 @@
     }
 
     .schedule-entry-content {
-        @apply w-full;
+        @apply w-full mt-2;
+    }
+
+    .schedule-entry-content-text-hint {
+        @apply text-sm mt-3;
+    }
+
+    .schedule-entry-content-text-hint-start {
+        @apply font-bold;
     }
   }
