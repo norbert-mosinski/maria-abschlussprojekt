@@ -13,14 +13,13 @@ module.exports = {
       },
     },
     screens: {
-      mobile: '393px',
-      tablet: '576px',
-      laptop: '992px',
-      desktop: '1400px'
+      mobile: '576px',
+      tablet: '992px',
+      laptop: '1400px'
     },
     fontFamily: {
-      'fira-sans': ['Fira Sans'],
-      'nuito-sans': ['Nuito Sans'],
+      'fira-sans': ['fira-sans'],
+      'nuito-sans': ['nuito-sans'],
     },
   },
   plugins: [],

@@ -1,0 +1,21 @@
+@layer components {
+    .competition {
+        @apply flex flex-row gap-x-7;
+    }
+
+    .competition-inner-1 {
+        @apply relative w-20 h-8;
+    }
+
+    .competition-inner-2 {
+        @apply w-20 h-8;
+    }
+
+    .competition-img {
+        @apply w-full h-full;
+    }
+
+    .competition-img-text {
+        @apply absolute top-0 left-0 w-full h-full flex justify-center items-center text-xl text-white;
+    }
+}

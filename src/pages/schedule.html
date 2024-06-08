@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./../styles/output.css" rel="stylesheet">
+    <script src="./../scripts/menu-controller.js"></script>
+</head>
+
+<body>
+    <div id="menu" class="menu hidden">
+        <div class="menu-inner">
+            <img src="../assets/images/logo-compact.svg" class="menu-img"></img>
+            <div class="menu-entry">
+                <a class="menu-entry-link" href="./home.html">START</a>
+                <a class="menu-entry-link" href="./tender.html">AUSSCHREIBUNG</a>
+                <a class="menu-entry-link menu-entry-active-link" href="./schedule.html">ZEITPLAN</a>
+                <a class="menu-entry-link" href="#">WETTKAMPFORDNUNG</a>
+                <a class="menu-entry-link" href="./route-map.html">STRECKENPLÄNE</a>
+                <a class="menu-entry-link" href="#">HELFERPORTAL</a>
+                <a class="menu-entry-link" href="#">ERGEBNISTABELLEN 2024</a>
+                <a class="menu-entry-link" href="#">ARCHIV</a>
+                <a class="menu-entry-link" href="#">SPONSOREN</a>
+                <a class="menu-entry-link" href="#">KONTAKT</a>
+                <a class="menu-entry-link" href="#">ANMELDUNG</a>
+            </div>
+        </div>
+        <button onclick="onMenuToggle()">
+            <img src="../assets/images/x-symbol.svg" class="menu-close-icon"></img>
+        </button>
+    </div>
+    <div class="header">
+        <img src="../assets/images/logo.svg" class="header-logo-img"></img>
+        <button onclick="onMenuToggle()" class="header-menu-btn">
+            <img src="../assets/images/burger-menu.svg" class="header-menu-img"></img>
+        </button>
+    </div>
+
+    <div class="flex md:flex-row flex-col mb-20 mt-9 bg-green-darkest text-white gap-y-14 mx-4 px-5">
+        <div class="w-full">
+            <h2 class="mt-14">ZEITPLAN</h2>
+            <div class="mt-8 flex flex-col gap-y-11">
+                <div class="flex md:flex-row flex-col">
+                    <div class="relative w-32 mt-3">
+                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
+                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">Ab 9
+                            Uhr</p>
+                    </div>
+                    <p class="w-full">Startnummernausgabe, Marktplatz</p>
+                </div>
+                <div class="flex md:flex-row flex-col">
+                    <div class="relative w-32 mt-3">
+                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
+                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">10 Uhr
+                        </p>
+                    </div>
+                    <p class="w-full">Auftakt mit Musik, Marktplatz (Es spielen die Traininger Spatzen.)</p>
+                </div>
+                <div class="flex md:flex-row flex-col">
+                    <div class="relative w-32 mt-3">
+                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
+                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">10:30
+                            Uhr</p>
+                    </div>
+                    <div class="w-full">
+                        <p>Es kann losgehen: Wettkämpfe C und D</p>
+                        <p>Start Schwimmen: Waldbad</p>
+                        <p class="text-sm mt-3"><span class="font-bold">Wichtiger Hinweis</span>: Es wird jeweils
+                            blockweise gestartet. Teilnehmende erfahren am Vorabend
+                            des
+                            Wettbewerbs unter www.waldtriathlon-trainingen.de ihre präzise Startzeit. Empfohlen wird, 20
+                            Minuten
+                            früher vor Ort zu sein.</p>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col">
+                    <div class="relative w-32 mt-3">
+                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
+                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">13 Uhr
+                        </p>
+                    </div>
+                    <div class="w-full">
+                        <p>Es kann losgehen: Wettkampf B</p>
+                        <p>Start Schwimmen: Waldbad</p>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col">
+                    <div class="relative w-32 mt-3">
+                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
+                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">15 Uhr
+                        </p>
+                    </div>
+                    <div class="w-full">
+                        <p>Es kann losgehen: Wettkampf A</p>
+                        <p>Start Schwimmen: Waldbad</p>
+                        <p class="text-sm mt-3"><span class="font-bold">Wichtiger Hinweis</span>: Es wird jeweils
+                            blockweise gestartet. Teilnehmende erfahren am Vorabend
+                            des
+                            Wettbewerbs unter www.waldtriathlon-trainingen.de ihre präzise Startzeit. Empfohlen wird, 20
+                            Minuten
+                            früher vor Ort zu sein.</p>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col">
+                    <div class="relative w-32 mt-3">
+                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
+                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">18 Uhr
+                        </p>
+                    </div>
+                    <p class="w-full">Zielschluss</p>
+                </div>
+                <div class="flex md:flex-row flex-col">
+                    <div class="relative w-32 mt-3">
+                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
+                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">18:15
+                            Uhr</p>
+                    </div>
+                    <p class="w-full">Siegerehrung mit Musik, Bühne vor dem Waldbad. Es legt auf: DJ Yankee</p>
+                </div>
+            </div>
+        </div>
+        <img class="w-1/4 hidden" src="../assets/images/stopwatch-portrait.jpg"></img>
+        <img class="w-full md:hidden" src="../assets/images/stopwatch-square.jpg"></img>
+    </div>
+    <div class="footer">
+        <img src="../assets/images/logo.svg" class="footer-img"></img>
+        <div class="footer-entries">
+            <a href="#">Kontakt</a>
+            <a href="#">Datenschutz</a>
+            <a href="./impressum.html">Impressum</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

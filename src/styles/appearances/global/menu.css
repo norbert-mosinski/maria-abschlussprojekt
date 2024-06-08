@@ -1,0 +1,32 @@
+@layer components {
+    .btn-primary {
+      @apply mt-14 bg-yellow px-8 py-2 font-bold;
+    }
+    .menu {
+      @apply h-screen w-screen fixed bg-green-darkest z-10 overflow-auto;
+    }
+
+    .menu-inner {
+      @apply flex flex-col w-full h-full px-4;
+    }
+
+    .menu-img {
+      @apply w-14 mt-16 mb-7;
+    }
+
+    .menu-entry {
+      @apply flex flex-col gap-y-5 pb-20 text-2xl text-white font-fira-sans;
+    }
+
+    .menu-entry-link {
+      @apply w-full px-2;
+    }
+
+    .menu-entry-active-link {
+      @apply text-yellow;
+    }
+
+    .menu-close-img {
+      @apply absolute top-6 right-4 w-8 h-8;
+    }
+  }

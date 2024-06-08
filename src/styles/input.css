@@ -1,20 +1,5 @@
+@import './setup/index.css';
+@import './appearances/index.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-    font-family: 'Fira Sans';
-    font-weight: 700;
-    src: url("../assets/fonts/fira-sans-bold.ttf") format('ttf');
-  }
-  
-  @font-face {
-    font-family: 'Nuito Sans';
-    src: url("../assets/fonts/nuito-sans-regular.ttf") format('ttf');
-  }
-
-  @font-face {
-    font-family: 'Nuito Sans';
-    font-weight: bold;
-    src: url("../assets/fonts/nuito-sans-semi-bold.ttf") format('ttf');
-  }

@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./../styles/output.css" rel="stylesheet">
+  <script src="./../scripts/menu-controller.js"></script>
+  <script src="./../scripts/timer-controller.js"></script>
+  <script src="./../scripts/settings.js"></script>
+  <script>
+    window.onload = function () {
+      runTimer(settings.marathonStart);
+    }
+  </script>
+</head>
+
+<body>
+  <div id="menu" class="menu hidden">
+    <div class="menu-inner">
+      <img src="../assets/images/logo-compact.svg" class="menu-img"></img>
+      <div class="menu-entry">
+        <a class="menu-entry-link menu-entry-active-link" href="./home.html">START</a>
+        <a class="menu-entry-link" href="./tender.html">AUSSCHREIBUNG</a>
+        <a class="menu-entry-link" href="./schedule.html">ZEITPLAN</a>
+        <a class="menu-entry-link" href="#">WETTKAMPFORDNUNG</a>
+        <a class="menu-entry-link" href="./route-map.html">STRECKENPLÄNE</a>
+        <a class="menu-entry-link" href="#">HELFERPORTAL</a>
+        <a class="menu-entry-link" href="#">ERGEBNISTABELLEN 2024</a>
+        <a class="menu-entry-link" href="#">ARCHIV</a>
+        <a class="menu-entry-link" href="#">SPONSOREN</a>
+        <a class="menu-entry-link" href="#">KONTAKT</a>
+        <a class="menu-entry-link" href="#">ANMELDUNG</a>
+      </div>
+    </div>
+    <button onclick="onMenuToggle()">
+      <img src="../assets/images/x-symbol.svg" class="menu-close-img"></img>
+    </button>
+  </div>
+  <div class="header">
+    <img src="../assets/images/logo.svg" class="header-logo-img"></img>
+    <button onclick="onMenuToggle()" class="header-menu-btn">
+      <img src="../assets/images/burger-menu.svg" class="header-menu-img"></img>
+    </button>
+  </div>
+  <div class="relative">
+    <picture>
+      <source srcset="../assets/images/triathlon-teaser-landscape.jpg" media="(min-width: 1400px)">
+      <source srcset="../assets/images/triathlon-teaser-square.jpg" media="(min-width: 992px)">
+      <img src="../assets/images/triathlon-teaser-portrait.jpg"
+        class="w-screen object-cover h-full absolute top-0 left-0 -z-10"></img>
+    </picture>
+    <div class=" flex items-center flex-col w-full h-full bg-primary/75 px-7 mobile:px-28 pt-24 pb-20">
+      <p class="text-white text-3xl mobile:text-4xl text-center">3. Waldtriathlon in Trainingen</p>
+      <div class="mt-12 flex flex-col gap-y-16">
+        <div class="timer-entry">
+          <p id="timer-days" class="timer-entry-text">16</p>
+          <span class="timer-entry-type-text">T</span>
+        </div>
+        <div class="timer-entry">
+          <p id="timer-hours" class="timer-entry-text">05</p>
+          <span class="timer-entry-type-text">S</span>
+        </div>
+        <div class="timer-entry">
+          <p id="timer-minutes" class="timer-entry-text">24</p>
+          <span class="timer-entry-type-text">M</span>
+        </div>
+        <div class="timer-entry">
+          <p id="timer-seconds" class="timer-entry-text">27</p>
+          <span class="timer-entry-type-text">S</span>
+        </div>
+      </div>
+      <button class="btn-primary">Jetzt anmelden</button>
+    </div>
+  </div>
+  <div>
+    <h2 class="text-center bg-secondary py-8 text-white">ES IST WIEDER SOWEIT!</h2>
+  </div>
+
+  <div class="grid md:grid-cols-2 px-4 mt-14 mb-16">
+    <div>
+      <h2 class="text-primary">WALDTRIATHLON 2024</h2>
+      <p class="text-xl font-bold">am Sonntag, 15. September 2024</p>
+      <p class="mt-4">Der Zuspruch in den vergangenen Jahren war so groß: Deshalb soll der Waldtriathlon in unserem Ort
+        nun ein
+        regelmäßiges Sportereignis werden. Im SV Trainingen haben wir eine eigene Orga-Einheit gebildet. Und wir setzen
+        in der heißen Phase vor und im Wettbewerb wieder auf viele ehrenamtliche Helferinnen und Helfer. Außerdem freuen
+        wir uns über weitere Sponsoren, die bei der Finanzierung des Events helfen. Ein großer Dank geht an die
+        Stadtwerke Trainingen, die auch dieses Jahr unsere Hauptförderer sind.</p>
+    </div>
+    <div class="mt-16 flex flex-col gap-y-16 items-center">
+      <div class="discipline-preview-img">
+        <img src="../assets/images/cycling-graphic.jpg"></img>
+      </div>
+      <div class="discipline-preview-img">
+        <img src="../assets/images/swimming-graphic.jpg"></img>
+      </div>
+      <div class="discipline-preview-img">
+        <img src="../assets/images/running-graphic.jpg"></img>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col bg-secondary px-4 py-14 mb-20">
+    <div class="text-white">
+      <h2 class="text-4xl">AUSSCHREIBUNG</h2>
+      <p class="mt-2 font-bold">Termin: Sonntag, 15. September</p>
+      <p class="mt-5 font-bold">Wettkämpfe:</p>
+      <div class="flex flex-col mt-5 gap-y-4">
+        <div class="competition">
+          <div class="competition-inner-1">
+            <div class="competition-inner-2">
+              <img src="../assets/images/content-box.jpg" class="competition-img"></img>
+            </div>
+            <p class="competition-img-text">A</p>
+          </div>
+          <p>Volkstriathlon klassisch (für Erwachsene)</p>
+        </div>
+        <div class="competition">
+          <div class="competition-inner-1">
+            <div class="competition-inner-2">
+              <img src="../assets/images/content-box.jpg" class="competition-img"></img>
+            </div>
+            <p class="competition-img-text">B</p>
+          </div>
+
+          <p>Schnuppertriathlon (für Jugendliche 12–18 Jahre)</p>
+        </div>
+        <div class="competition">
+          <div class="competition-inner-1">
+            <div class="competition-inner-2">
+              <img src="../assets/images/content-box.jpg" class="competition-img"></img>
+            </div>
+            <p class="competition-img-text">C</p>
+          </div>
+          <p>Kindertriathlon (ab 9 Jahren)</p>
+        </div>
+        <div class="competition">
+          <div class="competition-inner-1">
+            <div class="competition-inner-2">
+              <img src="../assets/images/content-box.jpg" class="competition-img"></img>
+            </div>
+            <p class="competition-img-text">D</p>
+          </div>
+          <p>Familienstaffel (3 Personen, davon mindestens 1 Erwachsener und 1 Kind)</p>
+        </div>
+      </div>
+      <div class="my-10">
+        <a href="./tender.html">
+          <button class="px-10 py-2 bg-white text-primary">Hier mehr Details</button>
+        </a>
+      </div>
+    </div>
+    <img src="../assets/images/family-biker.jpg" class="w-full"></img>
+  </div>
+
+  <div class="px-4 flex flex-col gap-y-14 mt-12 mb-16">
+    <a href="schedule.html">
+      <div class="box-reference">
+        <img src="../assets/images/stopwatch-square.jpg"></img>
+        <h2 class="box-reference-text">ZEITPLAN</h2>
+      </div>
+    </a>
+    <a href="./route-map.html">
+      <div class="box-reference">
+        <img src="../assets/images/stopwatch-square.jpg"></img>
+        <h2 class="box-reference-text">STRECKENPLÄNE</h2>
+      </div>
+    </a>
+  </div>
+
+  <div class="footer">
+    <img src="../assets/images/logo.svg" class="footer-img"></img>
+    <div class="footer-entries">
+      <a href="#">Kontakt</a>
+      <a href="#">Datenschutz</a>
+      <a href="./impressum.html">Impressum</a>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+@layer components {
+    .box-reference {
+      @apply bg-green-darkest;
+    }
+
+    .box-reference-text {
+      @apply py-2 mobile:py-5 text-center text-white;
+    }
+}

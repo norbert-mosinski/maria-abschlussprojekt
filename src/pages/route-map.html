@@ -8,46 +8,48 @@
     <script src="./../scripts/menu-controller.js"></script>
 </head>
 
-<body class="text-green-darkest text-lg min-h-screen font-nuito-sans">
-    <div id="menu" class="h-screen w-screen fixed hidden bg-green-darkest z-10 overflow-auto">
-        <div class="flex flex-col w-full h-full px-4">
-            <image src="../assets/images/logo-compact.svg" class="w-14 mt-16 mb-7"></image>
-            <div class="flex flex-col gap-y-5 pb-20 text-2xl text-white">
-                <a class="w-full px-2" href="./home.html">START</a>
-                <a class="w-full px-2" href="./tender.html">AUSSCHREIBUNG</a>
-                <a class="w-full px-2" href="./schedule.html">ZEITPLAN</a>
-                <a class="w-full px-2" href="#">WETTKAMPFORDNUNG</a>
-                <a class="w-full px-2 text-yellow" href="./route-map.html">STRECKENPLÄNE</a>
-                <a class="w-full px-2" href="#">HELFERPORTAL</a>
-                <a class="w-full px-2" href="#">ERGEBNISTABELLEN 2024</a>
-                <a class="w-full px-2" href="#">ARCHIV</a>
-                <a class="w-full px-2" href="#">SPONSOREN</a>
-                <a class="w-full px-2" href="#">KONTAKT</a>
-                <a class="w-full px-2" href="#">ANMELDUNG</a>
+<body>
+    <div id="menu" class="menu hidden">
+        <div class="menu-inner">
+            <img src="../assets/images/logo-compact.svg" class="menu-img"></img>
+            <div class="menu-entry">
+                <a class="menu-entry-link" href="./home.html">START</a>
+                <a class="menu-entry-link" href="./tender.html">AUSSCHREIBUNG</a>
+                <a class="menu-entry-link" href="./schedule.html">ZEITPLAN</a>
+                <a class="menu-entry-link" href="#">WETTKAMPFORDNUNG</a>
+                <a class="menu-entry-link menu-entry-active-link" href="./route-map.html">STRECKENPLÄNE</a>
+                <a class="menu-entry-link" href="#">HELFERPORTAL</a>
+                <a class="menu-entry-link" href="#">ERGEBNISTABELLEN 2024</a>
+                <a class="menu-entry-link" href="#">ARCHIV</a>
+                <a class="menu-entry-link" href="#">SPONSOREN</a>
+                <a class="menu-entry-link" href="#">KONTAKT</a>
+                <a class="menu-entry-link" href="#">ANMELDUNG</a>
             </div>
         </div>
         <button onclick="onMenuToggle()">
-            <image src="../assets/images/x-symbol.svg" class="absolute top-6 right-4 w-8 h-8"></image>
+            <img src="../assets/images/x-symbol.svg" class="menu-close-icon"></img>
         </button>
     </div>
-    <div class="flex justify-between py-6 px-4 h-24 items-center">
-        <image src="../assets/images/logo.svg" class="h-full py-2 pl-1"></image>
-        <button onclick="onMenuToggle()" class="w-12 h-12">
-            <image src="../assets/images/burger-menu.svg" class="w-full h-full"></image>
+    <div class="header">
+        <img src="../assets/images/logo.svg" class="header-logo-img"></img>
+        <button onclick="onMenuToggle()" class="header-menu-btn">
+            <img src="../assets/images/burger-menu.svg" class="header-menu-img"></img>
         </button>
     </div>
 
     <div class="mb-20 mt-9 px-4">
-        <h1 class="text-primary text-4xl font-bold font-fira-sans">STRECKENPLÄNE</h1>
-        <h2 class="text-3xl text-secondary font-bold mt-9 font-fira-sans">LEGENDE DER WETTKAMPFSTRECKEN</h2>
+        <h2 class="text-primary">STRECKENPLÄNE</h2>
+        <h2 class="text-secondary mt-9">LEGENDE DER WETTKAMPFSTRECKEN</h2>
 
         <div class="bg-green-darkest text-white px-5 py-8 mt-6">
-            <h3 class="font-bold">Wettkampf</h3>
-            <h3 class="font-bold">Volkstriathlon + Schnuppertriathlon</h3>
+            <p class="font-bold">Wettkampf</p>
+            <p class="font-bold">Volkstriathlon + Schnuppertriathlon</p>
             <div class="mt-5 flex flex-col gap-y-3">
                 <div class="flex flex-row gap-x-4">
                     <div class="w-11 h-11">
-                        <div><image src="../assets/images/swimming-graphic.jpg" class="w-full h-full"></image></div>
+                        <div>
+                            <img src="../assets/images/swimming-graphic.jpg" class="w-full h-full"></img>
+                        </div>
                     </div>
                     <div class="w-full">
                         <p>Alle Wettkämpfe</p>
@@ -56,7 +58,9 @@
                 </div>
                 <div class="flex flex-row gap-x-4">
                     <div class="w-11 h-11">
-                        <div><image src="../assets/images/cycling-graphic.jpg" class="w-full h-full"></image></div>
+                        <div>
+                            <img src="../assets/images/cycling-graphic.jpg" class="w-full h-full"></img>
+                        </div>
                     </div>
                     <div class="w-full">
                         <p>Rundstrecke Rad – 10 km</p>
@@ -64,7 +68,9 @@
                 </div>
                 <div class="flex flex-row gap-x-4">
                     <div class="w-11 h-11">
-                        <div><image src="../assets/images/running-graphic.jpg" class="w-full h-full"></image></div>
+                        <div>
+                            <img src="../assets/images/running-graphic.jpg" class="w-full h-full"></img>
+                        </div>
                     </div>
                     <div class="w-full">
                         <p>Rundstrecke laufen – 3 km</p>
@@ -73,7 +79,7 @@
                 <div class="flex flex-row gap-x-4">
                     <div class="w-11 h-11">
                         <div>
-                            <image src="../assets/images/catering-graphic.jpg" class="h-full w-full"></image>
+                            <img src="../assets/images/catering-graphic.jpg" class="h-full w-full"></img>
                         </div>
                     </div>
                     <div class="w-full">
@@ -87,7 +93,9 @@
                 </div>
                 <div class="flex flex-row gap-x-4">
                     <div class="w-11 h-11">
-                        <div><image src="../assets/images/start-graphic.jpg" class="w-full h-full"></image></div>
+                        <div>
+                            <img src="../assets/images/start-graphic.jpg" class="w-full h-full"></img>
+                        </div>
                     </div>
                     <div class="w-full">
                         <p>Start</p>
@@ -95,7 +103,9 @@
                 </div>
                 <div class="flex flex-row gap-x-4">
                     <div class="w-11 h-11">
-                        <div><image src="../assets/images/finish-graphic.jpg" class="w-full h-full"></image></div>
+                        <div>
+                            <img src="../assets/images/finish-graphic.jpg" class="w-full h-full"></img>
+                        </div>
                     </div>
                     <div class="w-full">
                         <p>Ziel</p>
@@ -106,15 +116,17 @@
         <div class="w-full h-72 bg-red-700 mt-8"></div>
 
 
-        <h2 class="text-3xl text-secondary font-bold mt-20 font-fira-sans">LEGENDE DER WETTKAMPFSTRECKEN</h2>
+        <h3 class="text-secondary mt-20">LEGENDE DER WETTKAMPFSTRECKEN</h3>
 
         <div class="bg-green-darkest text-white px-5 py-8 mt-6">
-            <h3 class="font-bold">Wettkampf</h3>
-            <h3 class="font-bold">Kindertriathlon + Familienstaffel</h3>
+            <p class="font-bold">Wettkampf</p>
+            <p class="font-bold">Kindertriathlon + Familienstaffel</p>
             <div class="mt-5 flex flex-col gap-y-3">
                 <div class="flex flex-row gap-x-4">
                     <div class="w-11 h-11">
-                        <div><image src="../assets/images/swimming-graphic.jpg" class="w-full h-full"></image></div>
+                        <div>
+                            <img src="../assets/images/swimming-graphic.jpg" class="w-full h-full"></img>
+                        </div>
                     </div>
                     <div class="w-full">
                         <p>Alle Wettkämpfe</p>
@@ -123,7 +135,9 @@
                 </div>
                 <div class="flex flex-row gap-x-4">
                     <div class="w-11 h-11">
-                        <div><image src="../assets/images/cycling-graphic.jpg" class="w-full h-full"></image></div>
+                        <div>
+                            <img src="../assets/images/cycling-graphic.jpg" class="w-full h-full"></img>
+                        </div>
                     </div>
                     <div class="w-full">
                         <p>Rundstrecke Rad – 2,5 km</p>
@@ -131,7 +145,9 @@
                 </div>
                 <div class="flex flex-row gap-x-4">
                     <div class="w-11 h-11">
-                        <div><image src="../assets/images/running-graphic.jpg" class="w-full h-full"></image></div>
+                        <div>
+                            <img src="../assets/images/running-graphic.jpg" class="w-full h-full"></img>
+                        </div>
                     </div>
                     <div class="w-full">
                         <p>Rundstrecke laufen – 500 m</p>
@@ -140,7 +156,7 @@
                 <div class="flex flex-row gap-x-4">
                     <div class="w-11 h-11">
                         <div>
-                            <image src="../assets/images/catering-graphic.jpg" class="h-full w-full"></image>
+                            <img src="../assets/images/catering-graphic.jpg" class="h-full w-full"></img>
                         </div>
                     </div>
                     <div class="w-full">
@@ -151,7 +167,9 @@
                 </div>
                 <div class="flex flex-row gap-x-4">
                     <div class="w-11 h-11">
-                        <div><image src="../assets/images/start-graphic.jpg" class="w-full h-full"></image></div>
+                        <div>
+                            <img src="../assets/images/start-graphic.jpg" class="w-full h-full"></img>
+                        </div>
                     </div>
                     <div class="w-full">
                         <p>Start</p>
@@ -159,7 +177,9 @@
                 </div>
                 <div class="flex flex-row gap-x-4">
                     <div class="w-11 h-11">
-                        <div><image src="../assets/images/finish-graphic.jpg" class="w-full h-full"></image></div>
+                        <div>
+                            <img src="../assets/images/finish-graphic.jpg" class="w-full h-full"></img>
+                        </div>
                     </div>
                     <div class="w-full">
                         <p>Ziel</p>
@@ -170,9 +190,9 @@
         <div class="w-full h-72 bg-red-700 mt-8"></div>
 
     </div>
-    <div class="flex md:flex-row flex-col md:justify-between items-center gap-y-10 bg-primary py-14">
-        <image src="../assets/images/logo.svg" class="w-48"></image>
-        <div class=" flex flex-col gap-y-4 text-white text-xl items-center">
+    <div class="footer">
+        <img src="../assets/images/logo.svg" class="footer-img"></img>
+        <div class="footer-entries">
             <a href="#">Kontakt</a>
             <a href="#">Datenschutz</a>
             <a href="./impressum.html">Impressum</a>

@@ -1,0 +1,5 @@
+@layer components {
+    .btn-primary {
+      @apply mt-14 bg-yellow px-8 py-2 font-bold;
+    }
+  }

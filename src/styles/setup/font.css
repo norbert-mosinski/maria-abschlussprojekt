@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'fira-sans';
+    src: url("../../assets/fonts/fira-sans-bold.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'nuito-sans';
+    src: url("../../assets/fonts/nuito-sans-regular.ttf") format('truetype');
+  }
+
+  @font-face {
+    font-family: 'nuito-sans';
+    font-weight: bold;
+    src: url("../../assets/fonts/nuito-sans-semi-bold.ttf") format('truetype');
+  }
