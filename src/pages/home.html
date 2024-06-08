@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./../styles/output.css" rel="stylesheet">
   <script src="./../scripts/menu-controller.js"></script>
-  <script src="./../scripts/home-timer-controller.js"></script>
+  <script src="./../scripts/timer-controller.js"></script>
   <script src="./../scripts/settings.js"></script>
   <script>
     window.onload = function () {
-      runhome - timer(settings.marathonStart);
+      runTimer(settings.marathonStart);
     }
   </script>
 </head>
@@ -19,7 +19,7 @@
   <div>
     <div id="menu" class="global-menu hidden">
       <div class="global-menu-inner">
-        <img src="../assets/images/logo-compact.svg" class="global-menu-img"></img>
+        <img src="../assets/images/logo-logomark.svg" class="global-menu-img"></img>
         <div class="global-menu-entry">
           <a class="global-menu-link-entry global-menu-link-active-entry" href="./home.html">START</a>
           <a class="global-menu-link-entry" href="./tender.html">AUSSCHREIBUNG</a>
@@ -40,7 +40,7 @@
     </div>
 
     <header class="global-header">
-      <img src="../assets/images/logo.svg" class="global-header-img-logo"></img>
+      <img src="../assets/images/logo-wordmark.svg" class="global-header-img-logo"></img>
       <button onclick="onMenuToggle()" class="global-header-btn-global-menu">
         <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu"></img>
       </button>
@@ -49,13 +49,14 @@
     <main>
       <div class="relative">
         <picture>
-          <source srcset="../assets/images/triathlon-teaser-landscape.jpg" media="(min-width: 1400px)">
-          <source srcset="../assets/images/triathlon-teaser-square.jpg" media="(min-width: 992px)">
-          <img src="../assets/images/triathlon-teaser-portrait.jpg" class="global-bg-img"></img>
+          <source srcset="../assets/images/triathlon-desktop.jpg" media="(min-width: 1400px)">
+          <source srcset="../assets/images/triathlon-tablet.jpg" media="(min-width: 992px)">
+          <img src="../assets/images/triathlon-mobile.jpg" class="global-bg-img"></img>
         </picture>
-        <div class=" flex items-center flex-col w-full h-full bg-primary/75 px-7 mobile:px-28 pt-24 pb-20">
-          <p class="text-white text-3xl mobile:text-4xl text-center">3. Waldtriathlon in Trainingen</p>
-          <div class="mt-12 flex flex-col gap-y-16">
+        <div class=" flex items-center flex-col w-full h-full bg-primary/75 px-7 mobile:px-28 pt-18 pb-18 mobile:pb-20">
+          <p class="text-white text-3xl mobile:text-4xl text-center font-extrabold">3. Waldtriathlon<br>in Trainingen
+          </p>
+          <div class="mt-12 mobile:mt-20 flex flex-col gap-y-10 mobile:gap-y-12">
             <div class="home-timer-entry">
               <p id="timer-days" class="home-timer-entry-text">16</p>
               <span class="home-timer-entry-text-type">T</span>
@@ -73,18 +74,18 @@
               <span class="home-timer-entry-text-type">S</span>
             </div>
           </div>
-          <button class="global-btn-primary">Jetzt anmelden</button>
+          <button class="global-btn-primary mt-11 mobile:mt-24">Jetzt anmelden</button>
         </div>
       </div>
       <div>
-        <h2 class="text-center bg-secondary py-8 text-white">ES IST WIEDER SOWEIT!</h2>
+        <h2 class="text-center bg-secondary py-8 mobile:py-7 text-white">ES IST WIEDER SOWEIT!</h2>
       </div>
 
-      <div class="grid tablet:grid-cols-2 px-4 mt-14 mb-16">
+      <div class="grid tablet:grid-cols-2 px-4 mt-14 mb-16 mobile:mb-20">
         <div>
-          <h2 class="text-primary">WALDTRIATHLON 2024</h2>
-          <p class="text-xl font-bold">am Sonntag, 15. September 2024</p>
-          <p class="mt-4">Der Zuspruch in den vergangenen Jahren war so groß: Deshalb soll der Waldtriathlon in unserem
+          <h1 class="text-primary">WALDTRIATHLON 2024</h1>
+          <p class="text-xl mt-2 font-bold">am Sonntag, 15. September 2024</p>
+          <p class="mt-4 mobile:mt-6">Der Zuspruch in den vergangenen Jahren war so groß: Deshalb soll der Waldtriathlon in unserem
             Ort
             nun ein
             regelmäßiges Sportereignis werden. Im SV Trainingen haben wir eine eigene Orga-Einheit gebildet. Und wir
@@ -94,22 +95,22 @@
             wir uns über weitere Sponsoren, die bei der Finanzierung des Events helfen. Ein großer Dank geht an die
             Stadtwerke Trainingen, die auch dieses Jahr unsere Hauptförderer sind.</p>
         </div>
-        <div class="mt-16 flex flex-col gap-y-16 items-center">
+        <div class="mt-16 mobile:mt-20 flex flex-col gap-y-16 mobile:gap-y-20 items-center">
           <div class="home-discipline-img-preview">
-            <img src="../assets/images/cycling-graphic.jpg"></img>
+            <img src="../assets/images/cycling-icon.jpg"></img>
           </div>
           <div class="home-discipline-img-preview">
-            <img src="../assets/images/swimming-graphic.jpg"></img>
+            <img src="../assets/images/swimming-icon.jpg"></img>
           </div>
           <div class="home-discipline-img-preview">
-            <img src="../assets/images/running-graphic.jpg"></img>
+            <img src="../assets/images/running-icon.jpg"></img>
           </div>
         </div>
       </div>
 
-      <div class="flex flex-col bg-secondary px-4 py-14 mb-20">
+      <div class="flex flex-col bg-secondary px-4 pt-11 pb-12 mobile:pb-14 mb-14">
         <div class="text-white">
-          <h2 class="text-4xl">AUSSCHREIBUNG</h2>
+          <h2>AUSSCHREIBUNG</h2>
           <p class="mt-2 font-bold">Termin: Sonntag, 15. September</p>
           <p class="mt-5 font-bold">Wettkämpfe:</p>
           <div class="flex flex-col mt-5 gap-y-4">
@@ -120,7 +121,7 @@
                 </div>
                 <p class="home-competition-text-img">A</p>
               </div>
-              <p>Volkstriathlon klassisch (für Erwachsene)</p>
+              <p>Volkstriathlon klassisch (für <br class="mobile:hidden">Erwachsene)</p>
             </div>
             <div class="home-competition">
               <div class="home-competition-inner-1">
@@ -130,7 +131,7 @@
                 <p class="home-competition-text-img">B</p>
               </div>
 
-              <p>Schnuppertriathlon (für Jugendliche 12–18 Jahre)</p>
+              <p>Schnuppertriathlon (für <br class="mobile:hidden">Jugendliche 12–18 Jahre)</p>
             </div>
             <div class="home-competition">
               <div class="home-competition-inner-1">
@@ -148,28 +149,28 @@
                 </div>
                 <p class="home-competition-text-img">D</p>
               </div>
-              <p>Familienstaffel (3 Personen, davon mindestens 1 Erwachsener und 1 Kind)</p>
+              <p class="tracking-tighter mobile:tracking-normal">Familienstaffel (3 Personen, davon <br class="mobile:hidden">mind. 1 <br class="hidden mobile:block">Erwachsener und 1 Kind)</p>
             </div>
           </div>
-          <div class="my-10">
+          <div class="mt-9 mb-14">
             <a href="./tender.html">
-              <button class="px-10 py-2 bg-white text-primary">Hier mehr Details</button>
+              <button class="global-btn-secondary">Hier mehr Details</button>
             </a>
           </div>
         </div>
-        <img src="../assets/images/family-biker.jpg" class="w-full"></img>
+        <img src="../assets/images/family-biker-section.jpg" class="w-full"></img>
       </div>
 
-      <div class="px-4 flex flex-col gap-y-14 mt-12 mb-16">
+      <div class="px-4 flex flex-col gap-y-14 mt-12">
         <a href="schedule.html">
           <div class="home-box-reference">
-            <img src="../assets/images/stopwatch-square.jpg"></img>
+            <img src="../assets/images/stopwatch-landscape.jpg"></img>
             <h2 class="home-box-reference-text">ZEITPLAN</h2>
           </div>
         </a>
         <a href="./route-map.html">
           <div class="home-box-reference">
-            <img src="../assets/images/stopwatch-square.jpg"></img>
+            <img src="../assets/images/runners.jpg"></img>
             <h2 class="home-box-reference-text">STRECKENPLÄNE</h2>
           </div>
         </a>
@@ -178,7 +179,7 @@
   </div>
 
   <div class="global-footer">
-    <img src="../assets/images/logo.svg" class="global-footer-img"></img>
+    <img src="../assets/images/logo-negative.svg" class="global-footer-img"></img>
     <div class="global-footer-entries">
       <a href="#">Kontakt</a>
       <a href="#">Datenschutz</a>

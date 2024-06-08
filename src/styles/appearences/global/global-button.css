@@ -2,4 +2,8 @@
     .global-btn-primary {
       @apply bg-action px-9 py-2 font-semibold text-green-darkest;
     }
+
+    .global-btn-secondary {
+      @apply bg-white text-primary px-9 py-2 font-semibold;
+    }
   }

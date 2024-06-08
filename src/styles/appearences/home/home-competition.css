@@ -1,6 +1,6 @@
 @layer components {
     .home-competition {
-        @apply flex flex-row gap-x-7;
+        @apply flex flex-row gap-x-4;
     }
 
     .home-competition-inner-1 {

@@ -1,4 +1,4 @@
-function homeTimer(timerEnd) {
+function runTimer(timerEnd) {
     updateTimer(timerEnd);
     setInterval(function () {
         updateTimer(timerEnd);
@@ -7,7 +7,7 @@ function homeTimer(timerEnd) {
 
 function updateTimer(timerEnd) {
     const now = new Date();
-    const timeLeft = home-timerEnd - now;
+    const timeLeft = timerEnd - now;
     const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));

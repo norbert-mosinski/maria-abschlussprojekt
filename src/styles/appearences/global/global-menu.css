@@ -1,6 +1,6 @@
 @layer components {
     .global-menu {
-      @apply h-screen w-screen fixed bg-secondary z-10 overflow-auto;
+      @apply h-screen w-screen fixed bg-secondary z-10 overflow-auto py-16 mobile:py-28;
     }
 
     .global-menu-inner {
@@ -8,11 +8,11 @@
     }
 
     .global-menu-img {
-      @apply w-14 mt-16 mb-7;
+      @apply w-14 mb-7;
     }
 
     .global-menu-entry {
-      @apply flex flex-col gap-y-5 pb-20 text-2xl text-white font-fira-sans;
+      @apply flex flex-col gap-y-5 mobile:gap-y-8 pb-20 text-3xl text-white font-fira-sans;
     }
 
     .global-menu-link-entry {
@@ -24,6 +24,6 @@
     }
 
     .global-menu-img-close {
-      @apply absolute top-6 right-4 w-8 h-8;
+      @apply absolute top-6 mobile:top-8 mobile:right-5 right-4 w-7 h-4 mobile:w-12 mobile:h-8;
     }
   }
