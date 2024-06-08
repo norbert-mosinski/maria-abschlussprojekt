@@ -1,0 +1,9 @@
+@layer components {
+    .impressum-content {
+        @apply text-green-darkest;
+    }
+
+    .impressum-content-title {
+        @apply font-bold;
+    }
+}

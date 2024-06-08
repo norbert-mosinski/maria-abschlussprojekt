@@ -1,0 +1,21 @@
+@layer components {
+    .schedule-entry {
+        @apply flex tablet:flex-row flex-col;
+    }
+
+    .schedule-entry-designation {
+        @apply relative w-32 mt-3;
+    }
+
+    .schedule-entry-designation-img {
+        @apply w-32 h-6;
+    }
+
+    .schedule-entry-designation-text {
+        @apply font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center;
+    }
+
+    .schedule-entry-content {
+        @apply w-full;
+    }
+  }

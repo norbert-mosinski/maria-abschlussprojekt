@@ -11,59 +11,63 @@
 <body>
     <div id="menu" class="global-menu hidden">
         <div class="global-menu-inner">
-          <img src="../assets/images/logo-compact.svg" class="global-menu-img"></img>
-          <div class="global-menu-entry">
-            <a class="global-menu-link-entry" href="./home.html">START</a>
-            <a class="global-menu-link-entry" href="./tender.html">AUSSCHREIBUNG</a>
-            <a class="global-menu-link-entry global-menu-link-active-entry" href="./schedule.html">ZEITPLAN</a>
-            <a class="global-menu-link-entry" href="#">WETTKAMPFORDNUNG</a>
-            <a class="global-menu-link-entry" href="./route-map.html">STRECKENPLÄNE</a>
-            <a class="global-menu-link-entry" href="#">HELFERPORTAL</a>
-            <a class="global-menu-link-entry" href="#">ERGEBNISTABELLEN 2024</a>
-            <a class="global-menu-link-entry" href="#">ARCHIV</a>
-            <a class="global-menu-link-entry" href="#">SPONSOREN</a>
-            <a class="global-menu-link-entry" href="#">KONTAKT</a>
-            <a class="global-menu-link-entry text-action" href="#">ANMELDUNG</a>
-          </div>
+            <img src="../assets/images/logo-compact.svg" class="global-menu-img"></img>
+            <div class="global-menu-entry">
+                <a class="global-menu-link-entry" href="./home.html">START</a>
+                <a class="global-menu-link-entry" href="./tender.html">AUSSCHREIBUNG</a>
+                <a class="global-menu-link-entry global-menu-link-active-entry" href="./schedule.html">ZEITPLAN</a>
+                <a class="global-menu-link-entry" href="#">WETTKAMPFORDNUNG</a>
+                <a class="global-menu-link-entry" href="./route-map.html">STRECKENPLÄNE</a>
+                <a class="global-menu-link-entry" href="#">HELFERPORTAL</a>
+                <a class="global-menu-link-entry" href="#">ERGEBNISTABELLEN 2024</a>
+                <a class="global-menu-link-entry" href="#">ARCHIV</a>
+                <a class="global-menu-link-entry" href="#">SPONSOREN</a>
+                <a class="global-menu-link-entry" href="#">KONTAKT</a>
+                <a class="global-menu-link-entry text-action" href="#">ANMELDUNG</a>
+            </div>
         </div>
         <button onclick="onMenuToggle()">
-          <img src="../assets/images/x-symbol.svg" class="global-menu-img-close"></img>
+            <img src="../assets/images/x-symbol.svg" class="global-menu-img-close"></img>
         </button>
-      </div>
-      <div class="global-header">
+    </div>
+    <div class="global-header">
         <img src="../assets/images/logo.svg" class="global-header-img-logo"></img>
         <button onclick="onMenuToggle()" class="global-header-btn-global-menu">
-          <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu"></img>
+            <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu"></img>
         </button>
-      </div>
+    </div>
 
-    <div class="flex tablet:flex-row flex-col mb-20 mt-9 bg-green-darkest text-white gap-y-14 mx-4 px-5">
-        <div class="w-full">
+    <div class="flex tablet:flex-row flex-col mb-20 mt-9 bg-green-darkest text-white gap-y-14 mx-4">
+        <div class="w-full px-5">
             <h2 class="mt-14">ZEITPLAN</h2>
             <div class="mt-8 flex flex-col gap-y-11">
-                <div class="flex tablet:flex-row flex-col">
-                    <div class="relative w-32 mt-3">
-                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
-                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">Ab 9
+                <div class="schedule-entry">
+                    <div class="schedule-entry-designation">
+                        <img src="../assets/images/content-box.jpg" class="schedule-entry-designation-img"></img>
+                        <p class="schedule-entry-designation-text">Ab 9
                             Uhr</p>
                     </div>
-                    <p class="w-full">Startnummernausgabe, Marktplatz</p>
+                    <div class="schedule-entry-content">
+                        <p>Startnummernausgabe, Marktplatz</p>
+                    </div>
                 </div>
-                <div class="flex tablet:flex-row flex-col">
-                    <div class="relative w-32 mt-3">
-                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
-                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">10 Uhr
+                <div class="schedule-entry">
+                    <div class="schedule-entry-designation">
+                        <img src="../assets/images/content-box.jpg" class="schedule-entry-designation-img"></img>
+                        <p class="schedule-entry-designation-text">10 Uhr
                         </p>
                     </div>
-                    <p class="w-full">Auftakt mit Musik, Marktplatz (Es spielen die Traininger Spatzen.)</p>
+                    <div class="schedule-entry-content">
+                        <p>Auftakt mit Musik, Marktplatz (Es spielen die Traininger Spatzen.)</p>
+                    </div>
                 </div>
-                <div class="flex tablet:flex-row flex-col">
-                    <div class="relative w-32 mt-3">
-                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
-                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">10:30
+                <div class="schedule-entry">
+                    <div class="schedule-entry-designation">
+                        <img src="../assets/images/content-box.jpg" class="schedule-entry-designation-img"></img>
+                        <p class="schedule-entry-designation-text">10:30
                             Uhr</p>
                     </div>
-                    <div class="w-full">
+                    <div class="schedule-entry-content">
                         <p>Es kann losgehen: Wettkämpfe C und D</p>
                         <p>Start Schwimmen: Waldbad</p>
                         <p class="text-sm mt-3"><span class="font-bold">Wichtiger Hinweis</span>: Es wird jeweils
@@ -74,24 +78,24 @@
                             früher vor Ort zu sein.</p>
                     </div>
                 </div>
-                <div class="flex tablet:flex-row flex-col">
-                    <div class="relative w-32 mt-3">
-                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
-                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">13 Uhr
+                <div class="schedule-entry">
+                    <div class="schedule-entry-designation">
+                        <img src="../assets/images/content-box.jpg" class="schedule-entry-designation-img"></img>
+                        <p class="schedule-entry-designation-text">13 Uhr
                         </p>
                     </div>
-                    <div class="w-full">
+                    <div class="schedule-entry-content">
                         <p>Es kann losgehen: Wettkampf B</p>
                         <p>Start Schwimmen: Waldbad</p>
                     </div>
                 </div>
-                <div class="flex tablet:flex-row flex-col">
-                    <div class="relative w-32 mt-3">
-                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
-                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">15 Uhr
+                <div class="schedule-entry">
+                    <div class="schedule-entry-designation">
+                        <img src="../assets/images/content-box.jpg" class="schedule-entry-designation-img"></img>
+                        <p class="schedule-entry-designation-text">15 Uhr
                         </p>
                     </div>
-                    <div class="w-full">
+                    <div class="schedule-entry-content">
                         <p>Es kann losgehen: Wettkampf A</p>
                         <p>Start Schwimmen: Waldbad</p>
                         <p class="text-sm mt-3"><span class="font-bold">Wichtiger Hinweis</span>: Es wird jeweils
@@ -102,21 +106,25 @@
                             früher vor Ort zu sein.</p>
                     </div>
                 </div>
-                <div class="flex tablet:flex-row flex-col">
-                    <div class="relative w-32 mt-3">
-                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
-                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">18 Uhr
+                <div class="schedule-entry">
+                    <div class="schedule-entry-designation">
+                        <img src="../assets/images/content-box.jpg" class="schedule-entry-designation-img"></img>
+                        <p class="schedule-entry-designation-text">18 Uhr
                         </p>
                     </div>
-                    <p class="w-full">Zielschluss</p>
+                    <div class="schedule-entry-content">
+                        <p>Zielschluss</p>
+                    </div>
                 </div>
-                <div class="flex tablet:flex-row flex-col">
-                    <div class="relative w-32 mt-3">
-                        <img src="../assets/images/content-box.jpg" class="w-32 h-6"></img>
-                        <p class="font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center">18:15
+                <div class="schedule-entry">
+                    <div class="schedule-entry-designation">
+                        <img src="../assets/images/content-box.jpg" class="schedule-entry-designation-img"></img>
+                        <p class="schedule-entry-designation-text">18:15
                             Uhr</p>
                     </div>
-                    <p class="w-full">Siegerehrung mit Musik, Bühne vor dem Waldbad. Es legt auf: DJ Yankee</p>
+                    <div class="schedule-entry-content">
+                        <p>Siegerehrung mit Musik, Bühne vor dem Waldbad. Es legt auf: DJ Yankee</p>
+                    </div>
                 </div>
             </div>
         </div>

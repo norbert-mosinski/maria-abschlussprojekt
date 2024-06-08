@@ -1,5 +1,5 @@
 @import './setup/index.css';
-@import './appearances/index.css';
+@import './appearences/index.css';
 
 @tailwind base;
 @tailwind components;
