@@ -8,7 +8,7 @@
     }
 
     .schedule-entry-designation-img {
-        @apply w-32 h-6;
+        @apply w-36 h-8 object-cover;
     }
 
     .schedule-entry-designation-text {

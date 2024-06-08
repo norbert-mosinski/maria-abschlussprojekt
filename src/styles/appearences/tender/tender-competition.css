@@ -12,7 +12,7 @@
     }
 
     .tender-competition-header-designation-img {
-        @apply mobile:w-28 w-16 h-12;
+        @apply mobile:w-28 w-16 object-cover object-right h-14;
     }
 
     .tender-competition-header-designation-text {

@@ -716,7 +716,6 @@ h6 {
 
 .global-header {
   display: flex;
-  height: 6rem;
   align-items: center;
   justify-content: space-between;
   padding-top: 1.5rem;
@@ -725,16 +724,33 @@ h6 {
   padding-right: 0.935rem;
 }
 
+@media (min-width: 576px) {
+  .global-header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
 .global-header-img-logo {
-  height: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.25rem;
+  height: 1.25rem;
+}
+
+@media (min-width: 576px) {
+  .global-header-img-logo {
+    height: 2.25rem;
+  }
 }
 
 .global-header-btn-global-menu {
-  height: 3rem;
-  width: 3rem;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+@media (min-width: 576px) {
+  .global-header-btn-global-menu {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
 }
 
 .global-header-img-global-menu {
@@ -872,6 +888,13 @@ h6 {
   width: 12rem;
 }
 
+@media (min-width: 576px) {
+  .home-discipline-img-preview {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+
 .home-competition {
   display: flex;
   flex-direction: row;
@@ -893,6 +916,12 @@ h6 {
 .home-competition-img {
   height: 100%;
   width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
 }
 
 .home-competition-text-img {
@@ -957,8 +986,10 @@ h6 {
 }
 
 .schedule-entry-designation-img {
-  height: 1.5rem;
-  width: 8rem;
+  height: 2rem;
+  width: 9rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .schedule-entry-designation-text {
@@ -1025,8 +1056,12 @@ h6 {
 }
 
 .tender-competition-header-designation-img {
-  height: 3rem;
+  height: 3.5rem;
   width: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
 }
 
 @media (min-width: 576px) {
@@ -1157,6 +1192,7 @@ h6 {
 .route-map-competition-content-entry {
   display: flex;
   flex-direction: row;
+  align-items: center;
   -moz-column-gap: 0.935rem;
        column-gap: 0.935rem;
 }
@@ -1249,6 +1285,10 @@ h6 {
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mt-9 {
@@ -1507,11 +1547,6 @@ h6 {
 
   .mobile\:text-\[19px\] {
     font-size: 19px;
-  }
-
-  .mobile\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .mobile\:tracking-normal {

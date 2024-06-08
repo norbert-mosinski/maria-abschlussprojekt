@@ -20,7 +20,7 @@
     }
 
     .route-map-competition-content-entry {
-        @apply flex flex-row gap-x-4 mobile:gap-x-6;
+        @apply flex flex-row items-center gap-x-4 mobile:gap-x-6;
     }
 
     .route-map-competition-content-entry-designation {

@@ -12,7 +12,7 @@
     }
 
     .home-competition-img {
-        @apply w-full h-full;
+        @apply w-full h-full object-cover object-right rounded-l-lg;
     }
 
     .home-competition-text-img {

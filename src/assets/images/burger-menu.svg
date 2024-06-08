@@ -1,6 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-<path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-<path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.89 41.16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2e332c;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Linie_1" data-name="Linie 1">
+    <path class="cls-1" d="M61.78,6.47H3.1C1.45,6.47.1,5.12.1,3.47S1.45.47,3.1.47h58.68c1.66,0,3,1.34,3,3s-1.34,3-3,3Z"/>
+  </g>
+  <g id="Linie_2" data-name="Linie 2">
+    <path class="cls-1" d="M61.78,23.58H3.1c-1.66,0-3-1.34-3-3s1.34-3,3-3h58.68c1.66,0,3,1.34,3,3s-1.34,3-3,3Z"/>
+  </g>
+  <g id="Linie_3" data-name="Linie 3">
+    <path class="cls-1" d="M61.78,40.7H3.1c-1.66,0-3-1.34-3-3s1.34-3,3-3h58.68c1.66,0,3,1.34,3,3s-1.34,3-3,3Z"/>
+  </g>
 </svg>

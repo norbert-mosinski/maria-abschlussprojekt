@@ -1,5 +1,5 @@
 @layer components {
     .home-discipline-img-preview {
-      @apply w-48 h-48;
+      @apply w-48 h-48 mobile:w-60 mobile:h-60;
     }
   }
