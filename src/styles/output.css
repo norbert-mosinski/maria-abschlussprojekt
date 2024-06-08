@@ -391,7 +391,7 @@ legend {
 
 ol,
 ul,
-menu {
+global-menu {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -654,7 +654,7 @@ h6 {
   --tw-contain-style:  ;
 }
 
-.btn-primary {
+.global-btn-primary {
   margin-top: 3.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 0 / var(--tw-bg-opacity));
@@ -667,7 +667,7 @@ h6 {
   color: rgb(46 51 44 / var(--tw-text-opacity));
 }
 
-.footer {
+.global-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -679,17 +679,17 @@ h6 {
 }
 
 @media (min-width: 576px) {
-  .footer {
+  .global-footer {
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
-.footer-img {
+.global-footer-img {
   width: 12rem;
 }
 
-.footer-entries {
+.global-footer-entries {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -700,7 +700,7 @@ h6 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.header {
+.global-header {
   display: flex;
   height: 6rem;
   align-items: center;
@@ -711,24 +711,24 @@ h6 {
   padding-right: 1rem;
 }
 
-.header-img-logo {
+.global-header-img-logo {
   height: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.25rem;
 }
 
-.header-btn-menu {
+.global-header-btn-global-menu {
   height: 3rem;
   width: 3rem;
 }
 
-.header-img-menu {
+.global-header-img-global-menu {
   height: 100%;
   width: 100%;
 }
 
-.btn-primary {
+.global-btn-primary {
   margin-top: 3.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 0 / var(--tw-bg-opacity));
@@ -739,7 +739,7 @@ h6 {
   font-weight: 700;
 }
 
-.\!menu {
+.\!global-menu {
   position: fixed;
   z-index: 10;
   height: 100vh;
@@ -749,7 +749,7 @@ h6 {
   background-color: rgb(61 80 58 / var(--tw-bg-opacity));
 }
 
-.menu {
+.global-menu {
   position: fixed;
   z-index: 10;
   height: 100vh;
@@ -759,7 +759,7 @@ h6 {
   background-color: rgb(61 80 58 / var(--tw-bg-opacity));
 }
 
-.menu-inner {
+.global-menu-inner {
   display: flex;
   height: 100%;
   width: 100%;
@@ -768,13 +768,13 @@ h6 {
   padding-right: 1rem;
 }
 
-.menu-img {
+.global-menu-img {
   margin-top: 4rem;
   margin-bottom: 1.75rem;
   width: 3.5rem;
 }
 
-.menu-entry {
+.global-menu-entry {
   display: flex;
   flex-direction: column;
   row-gap: 1.25rem;
@@ -786,18 +786,18 @@ h6 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.menu-link-entry {
+.global-menu-link-entry {
   width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.menu-link-active-entry {
+.global-menu-link-active-entry {
   --tw-text-opacity: 1;
   color: rgb(191 76 12 / var(--tw-text-opacity));
 }
 
-.menu-img-close {
+.global-menu-img-close {
   position: absolute;
   top: 1.5rem;
   right: 1rem;
@@ -805,7 +805,7 @@ h6 {
   width: 2rem;
 }
 
-.bg-img {
+.global-bg-img {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -816,13 +816,13 @@ h6 {
      object-fit: cover;
 }
 
-.timer-entry {
+.home-timer-entry {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
 
-.timer-entry-text {
+.home-timer-entry-text {
   font-size: 4.5rem;
   line-height: 1;
   font-weight: 700;
@@ -831,48 +831,48 @@ h6 {
 }
 
 @media (min-width: 576px) {
-  .timer-entry-text {
+  .home-timer-entry-text {
     font-size: 6rem;
     line-height: 1;
   }
 }
 
-.timer-entry-text-type {
+.home-timer-entry-text-type {
   margin-left: 0.75rem;
   font-size: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.discipline-img-preview {
+.home-discipline-img-preview {
   height: 12rem;
   width: 12rem;
 }
 
-.competition {
+.home-competition {
   display: flex;
   flex-direction: row;
   -moz-column-gap: 1.75rem;
        column-gap: 1.75rem;
 }
 
-.competition-inner-1 {
+.home-competition-inner-1 {
   position: relative;
   height: 2rem;
   width: 5rem;
 }
 
-.competition-inner-2 {
+.home-competition-inner-2 {
   height: 2rem;
   width: 5rem;
 }
 
-.competition-img {
+.home-competition-img {
   height: 100%;
   width: 100%;
 }
 
-.competition-text-img {
+.home-competition-text-img {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -887,12 +887,12 @@ h6 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.box-reference {
+.home-box-reference {
   --tw-bg-opacity: 1;
   background-color: rgb(61 80 58 / var(--tw-bg-opacity));
 }
 
-.box-reference-text {
+.home-box-reference-text {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-align: center;
@@ -901,7 +901,7 @@ h6 {
 }
 
 @media (min-width: 576px) {
-  .box-reference-text {
+  .home-box-reference-text {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }

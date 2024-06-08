@@ -9,38 +9,38 @@
 </head>
 
 <body>
-    <div id="menu" class="menu hidden">
-        <div class="menu-inner">
-            <img src="../assets/images/logo-compact.svg" class="menu-img"></img>
-            <div class="menu-entry">
-                <a class="menu-link-entry" href="./home.html">START</a>
-                <a class="menu-link-entry menu-link-active-entry" href="./tender.html">AUSSCHREIBUNG</a>
-                <a class="menu-link-entry" href="./schedule.html">ZEITPLAN</a>
-                <a class="menu-link-entry" href="#">WETTKAMPFORDNUNG</a>
-                <a class="menu-link-entry" href="./route-map.html">STRECKENPLÄNE</a>
-                <a class="menu-link-entry" href="#">HELFERPORTAL</a>
-                <a class="menu-link-entry" href="#">ERGEBNISTABELLEN 2024</a>
-                <a class="menu-link-entry" href="#">ARCHIV</a>
-                <a class="menu-link-entry" href="#">SPONSOREN</a>
-                <a class="menu-link-entry" href="#">KONTAKT</a>
-                <a class="menu-link-entry text-action" href="#">ANMELDUNG</a>
-            </div>
+    <div id="menu" class="global-menu hidden">
+        <div class="global-menu-inner">
+          <img src="../assets/images/logo-compact.svg" class="global-menu-img"></img>
+          <div class="global-menu-entry">
+            <a class="global-menu-link-entry" href="./home.html">START</a>
+            <a class="global-menu-link-entry global-menu-link-active-entry" href="./tender.html">AUSSCHREIBUNG</a>
+            <a class="global-menu-link-entry" href="./schedule.html">ZEITPLAN</a>
+            <a class="global-menu-link-entry" href="#">WETTKAMPFORDNUNG</a>
+            <a class="global-menu-link-entry" href="./route-map.html">STRECKENPLÄNE</a>
+            <a class="global-menu-link-entry" href="#">HELFERPORTAL</a>
+            <a class="global-menu-link-entry" href="#">ERGEBNISTABELLEN 2024</a>
+            <a class="global-menu-link-entry" href="#">ARCHIV</a>
+            <a class="global-menu-link-entry" href="#">SPONSOREN</a>
+            <a class="global-menu-link-entry" href="#">KONTAKT</a>
+            <a class="global-menu-link-entry text-action" href="#">ANMELDUNG</a>
+          </div>
         </div>
         <button onclick="onMenuToggle()">
-            <img src="../assets/images/x-symbol.svg" class="menu-close-icon"></img>
+          <img src="../assets/images/x-symbol.svg" class="global-menu-img-close"></img>
         </button>
-    </div>
-    <div class="header">
-        <img src="../assets/images/logo.svg" class="header-img-logo"></img>
-        <button onclick="onMenuToggle()" class="header-btn-menu">
-            <img src="../assets/images/burger-menu.svg" class="header-img-menu"></img>
+      </div>
+      <div class="global-header">
+        <img src="../assets/images/logo.svg" class="global-header-img-logo"></img>
+        <button onclick="onMenuToggle()" class="global-header-btn-global-menu">
+          <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu"></img>
         </button>
-    </div>
+      </div>
     <div class="relative">
         <picture>
             <source srcset="../assets/images/people-celebrating-landscape.jpg" media="(min-width: 1400px)">
             <source srcset="../assets/images/people-celebrating-square.jpg" media="(min-width: 992px)">
-            <img src="../assets/images/people-celebrating-portrait.jpg" class="bg-img"></img>
+            <img src="../assets/images/people-celebrating-portrait.jpg" class="global-bg-img"></img>
         </picture>
         <div
             class="flex flex-col tablet:justify-end w-full h-full px-12 pt-32 pb-44 mobile:pb-96 bg-primary/75 text-white">
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div>
-                <button class="mt-11 btn-primary">Jetzt anmelden</button>
+                <button class="mt-11 global-btn-primary">Jetzt anmelden</button>
             </div>
         </div>
     </div>
@@ -228,9 +228,9 @@
             bedruckten
             T-Shirts, Stickern und Kaffeebechern</p>
     </div>
-    <div class="footer">
-        <img src="../assets/images/logo.svg" class="footer-img"></img>
-        <div class="footer-entries">
+    <div class="global-footer">
+        <img src="../assets/images/logo.svg" class="global-footer-img"></img>
+        <div class="global-footer-entries">
             <a href="#">Kontakt</a>
             <a href="#">Datenschutz</a>
             <a href="./impressum.html">Impressum</a>

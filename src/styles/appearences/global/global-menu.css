@@ -1,29 +1,29 @@
 @layer components {
-    .menu {
+    .global-menu {
       @apply h-screen w-screen fixed bg-secondary z-10 overflow-auto;
     }
 
-    .menu-inner {
+    .global-menu-inner {
       @apply flex flex-col w-full h-full px-4;
     }
 
-    .menu-img {
+    .global-menu-img {
       @apply w-14 mt-16 mb-7;
     }
 
-    .menu-entry {
+    .global-menu-entry {
       @apply flex flex-col gap-y-5 pb-20 text-2xl text-white font-fira-sans;
     }
 
-    .menu-link-entry {
+    .global-menu-link-entry {
       @apply w-full px-2;
     }
 
-    .menu-link-active-entry {
+    .global-menu-link-active-entry {
       @apply text-primary;
     }
 
-    .menu-img-close {
+    .global-menu-img-close {
       @apply absolute top-6 right-4 w-8 h-8;
     }
   }

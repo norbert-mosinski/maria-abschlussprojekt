@@ -1,9 +1,9 @@
 @layer components {
-    .box-reference {
+    .home-box-reference {
       @apply bg-secondary;
     }
 
-    .box-reference-text {
+    .home-box-reference-text {
       @apply py-2 mobile:py-5 text-center text-white;
     }
 }

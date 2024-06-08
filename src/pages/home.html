@@ -6,70 +6,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./../styles/output.css" rel="stylesheet">
   <script src="./../scripts/menu-controller.js"></script>
-  <script src="./../scripts/timer-controller.js"></script>
+  <script src="./../scripts/home-timer-controller.js"></script>
   <script src="./../scripts/settings.js"></script>
   <script>
     window.onload = function () {
-      runTimer(settings.marathonStart);
+      runhome-timer(settings.marathonStart);
     }
   </script>
 </head>
 
 <body>
-  <div id="menu" class="menu hidden">
-    <div class="menu-inner">
-      <img src="../assets/images/logo-compact.svg" class="menu-img"></img>
-      <div class="menu-entry">
-        <a class="menu-link-entry menu-link-active-entry" href="./home.html">START</a>
-        <a class="menu-link-entry" href="./tender.html">AUSSCHREIBUNG</a>
-        <a class="menu-link-entry" href="./schedule.html">ZEITPLAN</a>
-        <a class="menu-link-entry" href="#">WETTKAMPFORDNUNG</a>
-        <a class="menu-link-entry" href="./route-map.html">STRECKENPLÄNE</a>
-        <a class="menu-link-entry" href="#">HELFERPORTAL</a>
-        <a class="menu-link-entry" href="#">ERGEBNISTABELLEN 2024</a>
-        <a class="menu-link-entry" href="#">ARCHIV</a>
-        <a class="menu-link-entry" href="#">SPONSOREN</a>
-        <a class="menu-link-entry" href="#">KONTAKT</a>
-        <a class="menu-link-entry text-action" href="#">ANMELDUNG</a>
+  <div id="menu" class="global-menu hidden">
+    <div class="global-menu-inner">
+      <img src="../assets/images/logo-compact.svg" class="global-menu-img"></img>
+      <div class="global-menu-entry">
+        <a class="global-menu-link-entry global-menu-link-active-entry" href="./home.html">START</a>
+        <a class="global-menu-link-entry" href="./tender.html">AUSSCHREIBUNG</a>
+        <a class="global-menu-link-entry" href="./schedule.html">ZEITPLAN</a>
+        <a class="global-menu-link-entry" href="#">WETTKAMPFORDNUNG</a>
+        <a class="global-menu-link-entry" href="./route-map.html">STRECKENPLÄNE</a>
+        <a class="global-menu-link-entry" href="#">HELFERPORTAL</a>
+        <a class="global-menu-link-entry" href="#">ERGEBNISTABELLEN 2024</a>
+        <a class="global-menu-link-entry" href="#">ARCHIV</a>
+        <a class="global-menu-link-entry" href="#">SPONSOREN</a>
+        <a class="global-menu-link-entry" href="#">KONTAKT</a>
+        <a class="global-menu-link-entry text-action" href="#">ANMELDUNG</a>
       </div>
     </div>
     <button onclick="onMenuToggle()">
-      <img src="../assets/images/x-symbol.svg" class="menu-img-close"></img>
+      <img src="../assets/images/x-symbol.svg" class="global-menu-img-close"></img>
     </button>
   </div>
-  <div class="header">
-    <img src="../assets/images/logo.svg" class="header-img-logo"></img>
-    <button onclick="onMenuToggle()" class="header-btn-menu">
-      <img src="../assets/images/burger-menu.svg" class="header-img-menu"></img>
+  <div class="global-header">
+    <img src="../assets/images/logo.svg" class="global-header-img-logo"></img>
+    <button onclick="onMenuToggle()" class="global-header-btn-global-menu">
+      <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu"></img>
     </button>
   </div>
   <div class="relative">
     <picture>
       <source srcset="../assets/images/triathlon-teaser-landscape.jpg" media="(min-width: 1400px)">
       <source srcset="../assets/images/triathlon-teaser-square.jpg" media="(min-width: 992px)">
-      <img src="../assets/images/triathlon-teaser-portrait.jpg" class="bg-img"></img>
+      <img src="../assets/images/triathlon-teaser-portrait.jpg" class="global-bg-img"></img>
     </picture>
     <div class=" flex items-center flex-col w-full h-full bg-primary/75 px-7 mobile:px-28 pt-24 pb-20">
       <p class="text-white text-3xl mobile:text-4xl text-center">3. Waldtriathlon in Trainingen</p>
       <div class="mt-12 flex flex-col gap-y-16">
-        <div class="timer-entry">
-          <p id="timer-days" class="timer-entry-text">16</p>
-          <span class="timer-entry-text-type">T</span>
+        <div class="home-timer-entry">
+          <p id="timer-days" class="home-timer-entry-text">16</p>
+          <span class="home-timer-entry-text-type">T</span>
         </div>
-        <div class="timer-entry">
-          <p id="timer-hours" class="timer-entry-text">05</p>
-          <span class="timer-entry-text-type">S</span>
+        <div class="home-timer-entry">
+          <p id="timer-hours" class="home-timer-entry-text">05</p>
+          <span class="home-timer-entry-text-type">S</span>
         </div>
-        <div class="timer-entry">
-          <p id="timer-minutes" class="timer-entry-text">24</p>
-          <span class="timer-entry-text-type">M</span>
+        <div class="home-timer-entry">
+          <p id="timer-minutes" class="home-timer-entry-text">24</p>
+          <span class="home-timer-entry-text-type">M</span>
         </div>
-        <div class="timer-entry">
-          <p id="timer-seconds" class="timer-entry-text">27</p>
-          <span class="timer-entry-text-type">S</span>
+        <div class="home-timer-entry">
+          <p id="timer-seconds" class="home-timer-entry-text">27</p>
+          <span class="home-timer-entry-text-type">S</span>
         </div>
       </div>
-      <button class="btn-primary">Jetzt anmelden</button>
+      <button class="global-btn-primary">Jetzt anmelden</button>
     </div>
   </div>
   <div>
@@ -88,13 +88,13 @@
         Stadtwerke Trainingen, die auch dieses Jahr unsere Hauptförderer sind.</p>
     </div>
     <div class="mt-16 flex flex-col gap-y-16 items-center">
-      <div class="discipline-img-preview">
+      <div class="home-discipline-img-preview">
         <img src="../assets/images/cycling-graphic.jpg"></img>
       </div>
-      <div class="discipline-img-preview">
+      <div class="home-discipline-img-preview">
         <img src="../assets/images/swimming-graphic.jpg"></img>
       </div>
-      <div class="discipline-img-preview">
+      <div class="home-discipline-img-preview">
         <img src="../assets/images/running-graphic.jpg"></img>
       </div>
     </div>
@@ -106,40 +106,40 @@
       <p class="mt-2 font-bold">Termin: Sonntag, 15. September</p>
       <p class="mt-5 font-bold">Wettkämpfe:</p>
       <div class="flex flex-col mt-5 gap-y-4">
-        <div class="competition">
-          <div class="competition-inner-1">
-            <div class="competition-inner-2">
-              <img src="../assets/images/content-box.jpg" class="competition-img"></img>
+        <div class="home-competition">
+          <div class="home-competition-inner-1">
+            <div class="home-competition-inner-2">
+              <img src="../assets/images/content-box.jpg" class="home-competition-img"></img>
             </div>
-            <p class="competition-text-img">A</p>
+            <p class="home-competition-text-img">A</p>
           </div>
           <p>Volkstriathlon klassisch (für Erwachsene)</p>
         </div>
-        <div class="competition">
-          <div class="competition-inner-1">
-            <div class="competition-inner-2">
-              <img src="../assets/images/content-box.jpg" class="competition-img"></img>
+        <div class="home-competition">
+          <div class="home-competition-inner-1">
+            <div class="home-competition-inner-2">
+              <img src="../assets/images/content-box.jpg" class="home-competition-img"></img>
             </div>
-            <p class="competition-text-img">B</p>
+            <p class="home-competition-text-img">B</p>
           </div>
 
           <p>Schnuppertriathlon (für Jugendliche 12–18 Jahre)</p>
         </div>
-        <div class="competition">
-          <div class="competition-inner-1">
-            <div class="competition-inner-2">
-              <img src="../assets/images/content-box.jpg" class="competition-img"></img>
+        <div class="home-competition">
+          <div class="home-competition-inner-1">
+            <div class="home-competition-inner-2">
+              <img src="../assets/images/content-box.jpg" class="home-competition-img"></img>
             </div>
-            <p class="competition-text-img">C</p>
+            <p class="home-competition-text-img">C</p>
           </div>
           <p>Kindertriathlon (ab 9 Jahren)</p>
         </div>
-        <div class="competition">
-          <div class="competition-inner-1">
-            <div class="competition-inner-2">
-              <img src="../assets/images/content-box.jpg" class="competition-img"></img>
+        <div class="home-competition">
+          <div class="home-competition-inner-1">
+            <div class="home-competition-inner-2">
+              <img src="../assets/images/content-box.jpg" class="home-competition-img"></img>
             </div>
-            <p class="competition-text-img">D</p>
+            <p class="home-competition-text-img">D</p>
           </div>
           <p>Familienstaffel (3 Personen, davon mindestens 1 Erwachsener und 1 Kind)</p>
         </div>
@@ -155,22 +155,22 @@
 
   <div class="px-4 flex flex-col gap-y-14 mt-12 mb-16">
     <a href="schedule.html">
-      <div class="box-reference">
+      <div class="home-box-reference">
         <img src="../assets/images/stopwatch-square.jpg"></img>
-        <h2 class="box-reference-text">ZEITPLAN</h2>
+        <h2 class="home-box-reference-text">ZEITPLAN</h2>
       </div>
     </a>
     <a href="./route-map.html">
-      <div class="box-reference">
+      <div class="home-box-reference">
         <img src="../assets/images/stopwatch-square.jpg"></img>
-        <h2 class="box-reference-text">STRECKENPLÄNE</h2>
+        <h2 class="home-box-reference-text">STRECKENPLÄNE</h2>
       </div>
     </a>
   </div>
 
-  <div class="footer">
-    <img src="../assets/images/logo.svg" class="footer-img"></img>
-    <div class="footer-entries">
+  <div class="global-footer">
+    <img src="../assets/images/logo.svg" class="global-footer-img"></img>
+    <div class="global-footer-entries">
       <a href="#">Kontakt</a>
       <a href="#">Datenschutz</a>
       <a href="./impressum.html">Impressum</a>

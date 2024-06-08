@@ -1,5 +1,5 @@
 @layer components {
-    .discipline-img-preview {
+    .home-discipline-img-preview {
       @apply w-48 h-48;
     }
   }

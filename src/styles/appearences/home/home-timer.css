@@ -1,11 +1,11 @@
 @layer components {
-    .timer-entry {
+    .home-timer-entry {
         @apply flex flex-row items-baseline;
     }
-    .timer-entry-text {
+    .home-timer-entry-text {
         @apply text-7xl mobile:text-8xl font-bold text-white;
     }
-    .timer-entry-text-type {
+    .home-timer-entry-text-type {
         @apply text-3xl ml-3 text-white
     }
   }

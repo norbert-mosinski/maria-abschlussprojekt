@@ -1,5 +1,5 @@
 @layer components {
-    .btn-primary {
+    .global-btn-primary {
       @apply mt-14 bg-action px-8 py-2 font-bold text-green-darkest;
     }
   }
