@@ -16,6 +16,6 @@
     }
 
     .home-competition-text-img {
-        @apply absolute top-0 left-0 w-full h-full flex justify-center items-center text-xl text-white;
+        @apply absolute top-0 left-0 w-full h-full flex justify-center items-center text-xl text-white font-bold;
     }
 }

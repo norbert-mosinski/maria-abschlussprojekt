@@ -1,10 +1,10 @@
 @layer components {
     .global-header {
-      @apply flex justify-between py-6 mobile:py-8 px-4 items-center;
+      @apply flex justify-between py-6 mobile:py-8 tablet:py-5 px-4 tablet:px-7 desktop:px-16 items-center;
     }
 
     .global-header-img-logo {
-        @apply h-5 mobile:h-9;
+        @apply h-5 mobile:h-9 tablet:h-20;
     }
 
     .global-header-btn-global-menu {

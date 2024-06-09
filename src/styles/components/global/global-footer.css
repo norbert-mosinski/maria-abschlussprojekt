@@ -1,6 +1,6 @@
 @layer components {
     .global-footer {
-        @apply flex tablet:flex-row flex-col tablet:justify-between items-center gap-y-10 bg-primary py-8;
+        @apply flex tablet:flex-row flex-col tablet:justify-between tablet:items-end items-center gap-y-10 tablet:gap-y-28 desktop:gap-y-32 bg-primary py-8 tablet:py-10 desktop:py-8 tablet:px-6 desktop:px-14;
     }
 
     .global-footer-img {
@@ -8,6 +8,6 @@
     }
 
     .global-footer-entries {
-        @apply flex flex-col gap-y-3 text-white font-semibold items-center;
+        @apply flex flex-col tablet:flex-row gap-y-3 text-white font-semibold items-center tablet:gap-x-9;
     }
 }

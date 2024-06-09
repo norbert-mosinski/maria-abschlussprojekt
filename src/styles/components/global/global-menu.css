@@ -12,7 +12,7 @@
     }
 
     .global-menu-entry {
-      @apply flex flex-col gap-y-5 mobile:gap-y-8 pb-20 text-3xl text-white font-fira-sans;
+      @apply flex flex-col gap-y-5 mobile:gap-y-8 tablet:gap-y-6 pb-20 text-3xl text-white font-fira-sans;
     }
 
     .global-menu-link-entry {
@@ -24,6 +24,6 @@
     }
 
     .global-menu-img-close {
-      @apply absolute top-6 mobile:top-8 mobile:right-5 right-4 w-7 h-4 mobile:w-12 mobile:h-8;
+      @apply absolute top-6 tablet:top-12 tablet:right-7 desktop:right-14 mobile:top-8 mobile:right-5 right-4 w-7 h-4 mobile:w-12 mobile:h-8 tablet:w-14 tablet:h-9;
     }
   }

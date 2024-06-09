@@ -3,9 +3,9 @@
         @apply flex flex-row items-baseline;
     }
     .home-timer-entry-text {
-        @apply text-7xl mobile:text-8xl font-fira-sans font-bold text-white;
+        @apply text-7xl mobile:text-8xl tablet:text-9xl desktop:text-[150px] font-fira-sans font-bold text-white;
     }
     .home-timer-entry-text-type {
-        @apply text-2xl mobile:text-3xl ml-3 text-white
+        @apply text-2xl mobile:text-3xl tablet:text-5xl ml-3 text-white font-bold;
     }
   }

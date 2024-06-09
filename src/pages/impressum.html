@@ -12,7 +12,7 @@
     <div>
         <div id="menu" class="global-menu hidden">
             <div class="global-menu-inner">
-                <img src="../assets/images/logo-logomark-negative.svg" class="global-menu-img"></img>
+                <img src="../assets/images/logo-logomark-negative.svg" class="global-menu-img">
                 <div class="global-menu-entry">
                     <a class="global-menu-link-entry" href="./home.html">START</a>
                     <a class="global-menu-link-entry" href="./tender.html">AUSSCHREIBUNG</a>
@@ -28,15 +28,18 @@
                 </div>
             </div>
             <button onclick="onMenuToggle()">
-                <img src="../assets/images/x-symbol.svg" class="global-menu-img-close"></img>
+                <img src="../assets/images/x-symbol.svg" class="global-menu-img-close">
             </button>
         </div>
 
         <main>
             <header class="global-header">
-                <img src="../assets/images/logo-wordmark.svg" class="global-header-img-logo"></img>
+                <picture>
+                    <source srcset="../assets/images/logo.svg" media="(min-width: 992px)">
+                    <img src="../assets/images/logo-wordmark.svg" class="global-header-img-logo">
+                </picture>
                 <button onclick="onMenuToggle()" class="global-header-btn-global-menu">
-                    <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu"></img>
+                    <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu">
                 </button>
             </header>
 
@@ -62,7 +65,7 @@
     </div>
 
     <footer class="global-footer">
-        <img src="../assets/images/logo-negative.svg" class="global-footer-img"></img>
+        <img src="../assets/images/logo-negative.svg" class="global-footer-img">
         <div class="global-footer-entries">
             <a href="#">Kontakt</a>
             <a href="#">Datenschutz</a>

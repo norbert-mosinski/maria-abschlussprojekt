@@ -18,12 +18,13 @@ module.exports = {
       spacing: {
         4: "0.935rem",
         18: "4.375rem",
+        22: "5.5rem"
       }
     },
     screens: {
       mobile: '576px',
       tablet: '992px',
-      laptop: '1400px'
+      desktop: '1400px'
     },
     fontFamily: {
       'fira-sans': ['fira-sans'],

@@ -4,6 +4,6 @@
     }
 
     .global-btn-secondary {
-      @apply bg-white text-primary px-9 py-2 font-semibold;
+      @apply bg-white text-primary px-9 tablet:px-5 py-2 font-semibold;
     }
   }

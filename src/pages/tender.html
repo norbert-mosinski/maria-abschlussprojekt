@@ -12,7 +12,7 @@
     <div>
         <div id="menu" class="global-menu hidden">
             <div class="global-menu-inner">
-                <img src="../assets/images/logo-logomark-negative.svg" class="global-menu-img"></img>
+                <img src="../assets/images/logo-logomark-negative.svg" class="global-menu-img">
                 <div class="global-menu-entry">
                     <a class="global-menu-link-entry" href="./home.html">START</a>
                     <a class="global-menu-link-entry global-menu-link-active-entry"
@@ -29,14 +29,17 @@
                 </div>
             </div>
             <button onclick="onMenuToggle()">
-                <img src="../assets/images/x-symbol.svg" class="global-menu-img-close"></img>
+                <img src="../assets/images/x-symbol.svg" class="global-menu-img-close">
             </button>
         </div>
 
         <header class="global-header">
-            <img src="../assets/images/logo-wordmark.svg" class="global-header-img-logo"></img>
+            <picture>
+                <source srcset="../assets/images/logo.svg" media="(min-width: 992px)">
+                <img src="../assets/images/logo-wordmark.svg" class="global-header-img-logo">
+            </picture>
             <button onclick="onMenuToggle()" class="global-header-btn-global-menu">
-                <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu"></img>
+                <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu">
             </button>
         </header>
 
@@ -45,7 +48,8 @@
                 <picture>
                     <source srcset="../assets/images/people-celebrating-desktop.jpg" media="(min-width: 1400px)">
                     <source srcset="../assets/images/people-celebrating-tablet.jpg" media="(min-width: 992px)">
-                    <img src="../assets/images/people-celebrating-mobile.jpg" class="global-bg-img"></img>
+                    <source srcset="../assets/images/people-celebrating-mobile.jpg" media="(min-width: 576px)">
+                    <img src="../assets/images/people-celebrating-min.jpg" class="global-bg-img">
                 </picture>
                 <div
                     class="flex flex-col items-center tablet:justify-end w-full min-h-[91vh] mobile:min-h-[91vh] py-32 text-white">
@@ -82,7 +86,7 @@
                                 <div>
                                     <div class="tender-competition-header-designation-inner">
                                         <img src="../assets/images/content-box-1-flat-border.svg"
-                                            class="tender-competition-header-designation-img"></img>
+                                            class="tender-competition-header-designation-img">
                                         <p class="tender-competition-header-designation-text">
                                             A
                                         </p>
@@ -96,27 +100,27 @@
                             <div class="tender-competition-entries">
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/swimming-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>600 m Schwimmen</p>
                                 </div>
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/running-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>6 km Laufen</p>
                                 </div>
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/cycling-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>20 km Radfahren</p>
                                 </div>
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/bill-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>Startgeld: 35 Euro (*)</p>
                                 </div>
                             </div>
                         </div>
-                        <img src="../assets/images/professional-biker.jpg"></img>
+                        <img src="../assets/images/professional-biker.jpg">
                     </div>
 
                     <div class="tender-competition">
@@ -125,7 +129,7 @@
                                 <div>
                                     <div class="tender-competition-header-designation-inner">
                                         <img src="../assets/images/content-box-1-flat-border.svg"
-                                            class="tender-competition-header-designation-img"></img>
+                                            class="tender-competition-header-designation-img">
                                         <p class="tender-competition-header-designation-text">
                                             B
                                         </p>
@@ -141,27 +145,27 @@
                             <div class="tender-competition-entries">
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/swimming-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>300 m Schwimmen</p>
                                 </div>
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/running-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>3 km Laufen</p>
                                 </div>
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/cycling-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>10 km Radfahren</p>
                                 </div>
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/bill-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>Startgeld: 20 Euro (*)</p>
                                 </div>
                             </div>
                         </div>
-                        <img src="../assets/images/girl-with-helmet.jpg"></img>
+                        <img src="../assets/images/girl-with-helmet.jpg">
                     </div>
 
                     <div class="tender-competition">
@@ -170,7 +174,7 @@
                                 <div>
                                     <div class="tender-competition-header-designation-inner">
                                         <img src="../assets/images/content-box-1-flat-border.svg"
-                                            class="tender-competition-header-designation-img"></img>
+                                            class="tender-competition-header-designation-img">
                                         <p class="tender-competition-header-designation-text">
                                             C
                                         </p>
@@ -184,27 +188,27 @@
                             <div class="tender-competition-entries">
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/swimming-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>100 m Schwimmen</p>
                                 </div>
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/running-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>500 m Laufen</p>
                                 </div>
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/cycling-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>2,5 km Radfahren</p>
                                 </div>
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/bill-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>Startgeld: Spende (*)</p>
                                 </div>
                             </div>
                         </div>
-                        <img src="../assets/images/kid-arriving-at-finish.jpg"></img>
+                        <img src="../assets/images/kid-arriving-at-finish.jpg">
                     </div>
 
                     <div class="tender-competition">
@@ -212,8 +216,8 @@
                             <div class="tender-competition-header">
                                 <div class="tender-competition-header-designation-inner">
                                     <img src="../assets/images/content-box-1-flat-border.svg"
-                                        class="tender-competition-header-designation-img"></img>
-                                    </img>
+                                        class="tender-competition-header-designation-img">
+                                    
                                     <p class="tender-competition-header-designation-text">
                                         D
                                     </p>
@@ -232,27 +236,27 @@
                             <div class="tender-competition-entries">
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/swimming-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>150 m Schwimmen</p>
                                 </div>
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/running-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>1,5 km Laufen</p>
                                 </div>
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/cycling-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>5 km Radfahren</p>
                                 </div>
                                 <div class="tender-competition-entry">
                                     <img src="../assets/images/bill-icon-negative.svg"
-                                        class="tender-competition-entry-img"></img>
+                                        class="tender-competition-entry-img">
                                     <p>Startgeld: 20 Euro (*)</p>
                                 </div>
                             </div>
                         </div>
-                        <img src="../assets/images/family-biker.jpg"></img>
+                        <img src="../assets/images/family-biker.jpg">
                     </div>
 
                 </div>
@@ -268,7 +272,7 @@
     </div>
 
     <footer class="global-footer">
-        <img src="../assets/images/logo-negative.svg" class="global-footer-img"></img>
+        <img src="../assets/images/logo-negative.svg" class="global-footer-img">
         <div class="global-footer-entries">
             <a href="#">Kontakt</a>
             <a href="#">Datenschutz</a>

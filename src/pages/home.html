@@ -19,7 +19,7 @@
   <div>
     <div id="menu" class="global-menu hidden">
       <div class="global-menu-inner">
-        <img src="../assets/images/logo-logomark-negative.svg" class="global-menu-img"></img>
+        <img src="../assets/images/logo-logomark-negative.svg" class="global-menu-img">
         <div class="global-menu-entry">
           <a class="global-menu-link-entry global-menu-link-active-entry" href="./home.html">START</a>
           <a class="global-menu-link-entry" href="./tender.html">AUSSCHREIBUNG</a>
@@ -35,14 +35,17 @@
         </div>
       </div>
       <button onclick="onMenuToggle()">
-        <img src="../assets/images/x-symbol.svg" class="global-menu-img-close"></img>
+        <img src="../assets/images/x-symbol.svg" class="global-menu-img-close">
       </button>
     </div>
 
     <header class="global-header">
-      <img src="../assets/images/logo-wordmark.svg" class="global-header-img-logo"></img>
+      <picture>
+        <source srcset="../assets/images/logo.svg" media="(min-width: 992px)">
+        <img src="../assets/images/logo-wordmark.svg" class="global-header-img-logo">
+      </picture>
       <button onclick="onMenuToggle()" class="global-header-btn-global-menu">
-        <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu"></img>
+        <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu">
       </button>
     </header>
 
@@ -51,12 +54,16 @@
         <picture>
           <source srcset="../assets/images/triathlon-desktop.jpg" media="(min-width: 1400px)">
           <source srcset="../assets/images/triathlon-tablet.jpg" media="(min-width: 992px)">
-          <img src="../assets/images/triathlon-mobile.jpg" class="global-bg-img"></img>
+          <source srcset="../assets/images/triathlon-mobile.jpg" media="(min-width: 576px)">
+          <img src="../assets/images/triathlon-min.jpg" class="global-bg-img">
         </picture>
-        <div class=" flex items-center flex-col w-full h-full px-7 mobile:px-28 pt-14 mobile:pt-18 pb-16 mobile:pb-18">
-          <p class="text-white text-3xl mobile:text-4xl text-center font-extrabold">3. Waldtriathlon<br>in Trainingen
+        <div
+          class="flex items-center flex-col w-full h-full px-7 mobile:px-28 pt-14 mobile:pt-18 tablet:pt-56 desktop:pt-48 pb-16 mobile:pb-18 tablet:pb-40 desktop:pb-36">
+          <p class="text-white text-3xl mobile:text-4xl text-center font-extrabold">3. Waldtriathlon<br
+              class="tablet:hidden">in Trainingen
           </p>
-          <div class="mt-10 mobile:mt-12 flex flex-col gap-y-8 mobile:gap-y-9">
+          <div
+            class="mt-10 mobile:mt-12 tablet:mt-20 desktop:mt-14 flex flex-col tablet:flex-row tablet:gap-x-9 desktop:gap-x-28 gap-y-8 mobile:gap-y-9">
             <div class="home-timer-entry">
               <p id="timer-days" class="home-timer-entry-text">16</p>
               <span class="home-timer-entry-text-type">T</span>
@@ -74,18 +81,20 @@
               <span class="home-timer-entry-text-type">S</span>
             </div>
           </div>
-          <button class="global-btn-primary mt-10 mobile:mt-16">Jetzt anmelden</button>
+          <button class="global-btn-primary mt-10 mobile:mt-16 tablet:mt-36 desktop:mt-20">Jetzt anmelden</button>
         </div>
       </div>
       <div>
-        <h2 class="text-center bg-secondary py-7 mobile:py-7 text-white">ES IST WIEDER SOWEIT!</h2>
+        <h2 class="text-center bg-secondary py-7 mobile:py-7 tablet:py-7 text-white">ES IST WIEDER SOWEIT!</h2>
       </div>
 
-      <div class="grid tablet:grid-cols-2 px-4 mt-14 mb-16 mobile:mb-20">
+      <div class="grid px-4 tablet:px-6 desktop:px-14 mt-14 mb-16 mobile:mb-20">
         <div>
           <h1 class="text-primary">WALDTRIATHLON 2024</h1>
           <p class="text-xl mt-2 font-bold">am Sonntag, 15. September 2024</p>
-          <p class="mt-4 mobile:mt-6">Der Zuspruch in den vergangenen Jahren war so groß: Deshalb soll der Waldtriathlon in unserem
+          <p class="mt-4 mobile:mt-6 tablet:mt-9 desktop:mt-8">Der Zuspruch in den vergangenen Jahren war so groß:
+            Deshalb soll der Waldtriathlon
+            in unserem
             Ort
             nun ein
             regelmäßiges Sportereignis werden. Im SV Trainingen haben wir eine eigene Orga-Einheit gebildet. Und wir
@@ -95,82 +104,98 @@
             wir uns über weitere Sponsoren, die bei der Finanzierung des Events helfen. Ein großer Dank geht an die
             Stadtwerke Trainingen, die auch dieses Jahr unsere Hauptförderer sind.</p>
         </div>
-        <div class="mt-16 mobile:mt-20 flex flex-col gap-y-16 mobile:gap-y-20 items-center">
+        <div
+          class="mt-16 mobile:mt-20 tablet:mt-16 desktop:mt-20 flex flex-col tablet:flex-row tablet:gap-x-18 desktop:gap-x-24 gap-y-16 mobile:gap-y-20 items-center tablet:justify-center">
           <div class="home-discipline-img-preview">
-            <img src="../assets/images/cycling-icon.svg"></img>
+            <img src="../assets/images/cycling-icon.svg">
           </div>
           <div class="home-discipline-img-preview">
-            <img src="../assets/images/swimming-icon.svg"></img>
+            <img src="../assets/images/swimming-icon.svg">
           </div>
           <div class="home-discipline-img-preview">
-            <img src="../assets/images/running-icon.svg"></img>
+            <img src="../assets/images/running-icon.svg">
           </div>
         </div>
       </div>
 
-      <div class="flex flex-col bg-secondary px-4 pt-11 pb-12 mobile:pb-14 mb-14">
-        <div class="text-white">
+      <div
+        class="bg-secondary text-white px-4 tablet:px-6 desktop:px-14 pt-11 tablet:pt-18 desktop:pt-20 pb-12 mobile:pb-14 tablet:pb-20 desktop:pb-22 mb-14 tablet:mb-18 desktop:mb-22">
+        <div class="hidden tablet:block desktop:hidden mb-8">
           <h2>AUSSCHREIBUNG</h2>
           <p class="mt-2 font-bold">Termin: Sonntag, 15. September</p>
-          <p class="mt-5 font-bold">Wettkämpfe:</p>
-          <div class="flex flex-col mt-5 gap-y-4">
-            <div class="home-competition">
-              <div class="home-competition-inner-1">
-                <div class="home-competition-inner-2">
-                  <img src="../assets/images/content-box.svg" class="home-competition-img"></img>
-                </div>
-                <p class="home-competition-text-img">A</p>
-              </div>
-              <p>Volkstriathlon klassisch (für <br class="mobile:hidden">Erwachsene)</p>
-            </div>
-            <div class="home-competition">
-              <div class="home-competition-inner-1">
-                <div class="home-competition-inner-2">
-                  <img src="../assets/images/content-box.svg" class="home-competition-img"></img>
-                </div>
-                <p class="home-competition-text-img">B</p>
-              </div>
-
-              <p>Schnuppertriathlon (für <br class="mobile:hidden">Jugendliche 12–18 Jahre)</p>
-            </div>
-            <div class="home-competition">
-              <div class="home-competition-inner-1">
-                <div class="home-competition-inner-2">
-                  <img src="../assets/images/content-box.svg" class="home-competition-img"></img>
-                </div>
-                <p class="home-competition-text-img">C</p>
-              </div>
-              <p>Kindertriathlon (ab 9 Jahren)</p>
-            </div>
-            <div class="home-competition">
-              <div class="home-competition-inner-1">
-                <div class="home-competition-inner-2">
-                  <img src="../assets/images/content-box.svg" class="home-competition-img"></img>
-                </div>
-                <p class="home-competition-text-img">D</p>
-              </div>
-              <p class="tracking-tighter mobile:tracking-normal">Familienstaffel (3 Personen, davon <br class="mobile:hidden">mind. 1 <br class="hidden mobile:block">Erwachsener und 1 Kind)</p>
-            </div>
-          </div>
-          <div class="mt-9 mb-14">
-            <a href="./tender.html">
-              <button class="global-btn-secondary">Hier mehr Details</button>
-            </a>
-          </div>
         </div>
-        <img src="../assets/images/family-biker-section.jpg" class="w-full"></img>
+        <div class="flex flex-col tablet:flex-row-reverse tablet:gap-x-7 desktop:gap-x-9">
+          <div class="tablet:w-1/2 tablet:flex tablet:flex-col tablet:justify-between">
+            <div>
+              <div class="tablet:hidden desktop:block">
+                <h2>AUSSCHREIBUNG</h2>
+                <p class="mt-2 font-bold">Termin: Sonntag, 15. September</p>
+              </div>
+              <p class="mt-5 font-bold tablet:mt-0 desktop:mt-8">Wettkämpfe:</p>
+              <div class="flex flex-col mt-5 gap-y-4 tablet:gap-y-5 desktop:gap-y-6">
+                <div class="home-competition">
+                  <div class="home-competition-inner-1">
+                    <div class="home-competition-inner-2">
+                      <img src="../assets/images/content-box.svg" class="home-competition-img">
+                    </div>
+                    <p class="home-competition-text-img">A</p>
+                  </div>
+                  <p class="tablet:tracking-tighter desktop:tracking-normal">Volkstriathlon klassisch (für <br class="mobile:hidden">Erwachsene)</p>
+                </div>
+                <div class="home-competition">
+                  <div class="home-competition-inner-1">
+                    <div class="home-competition-inner-2">
+                      <img src="../assets/images/content-box.svg" class="home-competition-img">
+                    </div>
+                    <p class="home-competition-text-img">B</p>
+                  </div>
+
+                  <p>Schnuppertriathlon (für <br class="mobile:hidden">Jugendliche<br
+                      class="hidden tablet:block desktop:hidden"> 12–18 Jahre)</p>
+                </div>
+                <div class="home-competition">
+                  <div class="home-competition-inner-1">
+                    <div class="home-competition-inner-2">
+                      <img src="../assets/images/content-box.svg" class="home-competition-img">
+                    </div>
+                    <p class="home-competition-text-img">C</p>
+                  </div>
+                  <p>Kindertriathlon (ab 9 Jahren)</p>
+                </div>
+                <div class="home-competition">
+                  <div class="home-competition-inner-1">
+                    <div class="home-competition-inner-2">
+                      <img src="../assets/images/content-box.svg" class="home-competition-img">
+                    </div>
+                    <p class="home-competition-text-img">D</p>
+                  </div>
+                  <p class="tracking-tighter mobile:tracking-normal tablet:tracking-tighter desktop:tracking-normal">Familienstaffel (3 Personen, davon <br
+                      class="mobile:hidden">mind.<br class="hidden tablet:block desktop:hidden"> 1 <br
+                      class="hidden mobile:block tablet:hidden">Erwachsener<br class="hidden desktop:block"> und 1 Kind)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-9 desktop:mt-14 mb-14 tablet:mb-0">
+              <a href="./tender.html">
+                <button class="global-btn-secondary">Hier mehr Details</button>
+              </a>
+            </div>
+          </div>
+          <img src="../assets/images/family-biker-section.jpg" class="w-full tablet:w-1/2">
+        </div>
       </div>
 
-      <div class="px-4 flex flex-col gap-y-14 mt-12">
+      <div class="px-4 tablet:px-6 desktop:px-14 flex flex-col tablet:flex-row tablet:gap-x-7 desktop:gap-x-10 gap-y-14 mt-12">
         <a href="schedule.html">
           <div class="home-box-reference">
-            <img src="../assets/images/stopwatch-landscape.jpg"></img>
+            <img src="../assets/images/stopwatch-landscape.jpg">
             <h2 class="home-box-reference-text">ZEITPLAN</h2>
           </div>
         </a>
         <a href="./route-map.html">
           <div class="home-box-reference">
-            <img src="../assets/images/runners.jpg"></img>
+            <img src="../assets/images/runners.jpg">
             <h2 class="home-box-reference-text">STRECKENPLÄNE</h2>
           </div>
         </a>
@@ -179,7 +204,7 @@
   </div>
 
   <div class="global-footer">
-    <img src="../assets/images/logo-negative.svg" class="global-footer-img"></img>
+    <img src="../assets/images/logo-negative.svg" class="global-footer-img">
     <div class="global-footer-entries">
       <a href="#">Kontakt</a>
       <a href="#">Datenschutz</a>
