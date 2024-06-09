@@ -1,3 +1,6 @@
+## Opening the website
+Open any file from the src/pages folder in your browser.
+
 ## Development setup
 
 ### Prerequisites

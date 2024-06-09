@@ -787,8 +787,8 @@ h6 {
 }
 
 .global-menu-img {
-  margin-bottom: 1.75rem;
-  width: 3.5rem;
+  margin-bottom: 2rem;
+  width: 3rem;
 }
 
 .global-menu-entry {
@@ -845,6 +845,8 @@ h6 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: left bottom;
+     object-position: left bottom;
 }
 
 .home-timer-entry {
@@ -986,7 +988,6 @@ h6 {
 }
 
 .schedule-entry-designation-img {
-  height: 2rem;
   width: 9rem;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1243,6 +1244,10 @@ h6 {
   margin-bottom: 2rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-11 {
   margin-top: 2.75rem;
 }
@@ -1307,12 +1312,12 @@ h6 {
   display: none;
 }
 
-.h-\[80vh\] {
-  height: 80vh;
-}
-
 .h-full {
   height: 100%;
+}
+
+.min-h-\[91vh\] {
+  min-height: 91vh;
 }
 
 .w-1\/4 {
@@ -1337,10 +1342,6 @@ h6 {
 
 .items-center {
   align-items: center;
-}
-
-.gap-y-10 {
-  row-gap: 2.5rem;
 }
 
 .gap-y-14 {
@@ -1371,10 +1372,6 @@ h6 {
   row-gap: 2rem;
 }
 
-.bg-primary\/75 {
-  background-color: rgb(191 76 12 / 0.75);
-}
-
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(61 80 58 / var(--tw-bg-opacity));
@@ -1395,29 +1392,30 @@ h6 {
   padding-right: 1.75rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .pb-12 {
   padding-bottom: 3rem;
 }
 
-.pb-18 {
-  padding-bottom: 4.375rem;
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .pt-11 {
   padding-top: 2.75rem;
 }
 
-.pt-18 {
-  padding-top: 4.375rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .text-center {
@@ -1486,12 +1484,16 @@ h6 {
     margin-bottom: 5rem;
   }
 
-  .mobile\:mt-20 {
-    margin-top: 5rem;
+  .mobile\:mt-12 {
+    margin-top: 3rem;
   }
 
-  .mobile\:mt-24 {
-    margin-top: 6rem;
+  .mobile\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .mobile\:mt-20 {
+    margin-top: 5rem;
   }
 
   .mobile\:mt-6 {
@@ -1506,6 +1508,10 @@ h6 {
     display: none;
   }
 
+  .mobile\:min-h-\[91vh\] {
+    min-height: 91vh;
+  }
+
   .mobile\:w-4\/6 {
     width: 66.666667%;
   }
@@ -1514,12 +1520,12 @@ h6 {
     row-gap: 2.75rem;
   }
 
-  .mobile\:gap-y-12 {
-    row-gap: 3rem;
-  }
-
   .mobile\:gap-y-20 {
     row-gap: 5rem;
+  }
+
+  .mobile\:gap-y-9 {
+    row-gap: 2.25rem;
   }
 
   .mobile\:px-28 {
@@ -1536,8 +1542,12 @@ h6 {
     padding-bottom: 3.5rem;
   }
 
-  .mobile\:pb-20 {
-    padding-bottom: 5rem;
+  .mobile\:pb-18 {
+    padding-bottom: 4.375rem;
+  }
+
+  .mobile\:pt-18 {
+    padding-top: 4.375rem;
   }
 
   .mobile\:text-4xl {
