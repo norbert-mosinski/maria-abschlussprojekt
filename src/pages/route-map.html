@@ -7,6 +7,11 @@
     <link href="./../styles/output.css" rel="stylesheet">
     <script src="./../scripts/menu-controller.js"></script>
     <script src="./../scripts/map-controller.js"></script>
+    <script>
+        window.onload = function () {
+            registerEventHandlers();
+        }
+    </script>
 </head>
 
 <body>
@@ -52,16 +57,18 @@
                     <h2 class="text-secondary text-[34px] mobile:text-4xl">LEGENDE <br class="desktop:hidden">DER
                         WETTKAMPFSTRECKEN</h2>
                     <div class="route-map-competition">
-                        <div id="route-info-volkstriathlon-title" onclick="onInfoTitleClick(event)"
+                        <div id="route-info-volkstriathlon-title"
                             class="route-map-competition-title tablet:tracking-tighter text-[19px] desktop:tracking-tighter">
                             <p class="route-map-competition-title-text">Wettkampf <br
                                     class="mobile:hidden tablet:block desktop:hidden"><span
                                     class="tracking-tighter mobile:tracking-normal">Volkstriathlon +
                                     Schnuppertriathlon</span></p>
-                            <img id="route-info-volkstriathlon-title-img" src="../assets/images/plus-icon.svg" class="route-map-competition-title-icon">
+                            <img id="route-info-volkstriathlon-title-img" src="../assets/images/minus-icon.svg"
+                                class="route-map-competition-title-icon">
                         </div>
                         <div id="route-info-volkstriathlon-content" class="route-map-competition-content">
-                            <div class="route-map-competition-content-entry">
+                            <div id="route-info-volkstriathlon-content-entry-swimming"
+                                class="route-map-competition-content-entry">
                                 <div class="route-map-competition-content-entry-designation">
                                     <div>
                                         <img src="../assets/images/swimming-icon-negative.svg"
@@ -73,7 +80,8 @@
                                         50 m-Bahn</p>
                                 </div>
                             </div>
-                            <div class="route-map-competition-content-entry">
+                            <div id="route-info-volkstriathlon-content-entry-cycling-round"
+                                class="route-map-competition-content-entry">
                                 <div class="route-map-competition-content-entry-designation">
                                     <div>
                                         <img src="../assets/images/cycling-icon-negative.svg"
@@ -84,7 +92,8 @@
                                     <p>Rundstrecke Rad – 10 km</p>
                                 </div>
                             </div>
-                            <div class="route-map-competition-content-entry">
+                            <div id="route-info-volkstriathlon-content-entry-running-round"
+                                class="route-map-competition-content-entry">
                                 <div class="route-map-competition-content-entry-designation">
                                     <div>
                                         <img src="../assets/images/running-icon-negative.svg"
@@ -95,7 +104,8 @@
                                     <p>Rundstrecke laufen – 3 km</p>
                                 </div>
                             </div>
-                            <div class="route-map-competition-content-entry">
+                            <div id="route-info-volkstriathlon-content-entry-catering"
+                                class="route-map-competition-content-entry">
                                 <div class="route-map-competition-content-entry-designation">
                                     <div>
                                         <img src="../assets/images/catering-icon-negative.svg"
@@ -114,14 +124,19 @@
 
                                 </div>
                                 <div class="route-map-competition-content-entry-description">
-                                    <p>Radstrecke</p>
-                                    <p>VP 1 bei Kilometer 3,5</p>
-                                    <p>VP 2 bei Kilometer 7,5</p>
-                                    <p class="mt-2">Laufstrecke</p>
-                                    <p>VP 3 bei Kilometer 2,5</p>
+                                    <div id="route-info-volkstriathlon-content-entry-catering-cycling">
+                                        <p>Radstrecke</p>
+                                        <p>VP 1 bei Kilometer 3,5</p>
+                                        <p>VP 2 bei Kilometer 7,5</p>
+                                    </div>
+                                    <div id="route-info-volkstriathlon-content-entry-catering-running">
+                                        <p class="mt-2">Laufstrecke</p>
+                                        <p>VP 3 bei Kilometer 2,5</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="route-map-competition-content-entry">
+                            <div id="route-info-volkstriathlon-content-entry-start"
+                                class="route-map-competition-content-entry">
                                 <div class="route-map-competition-content-entry-designation">
                                     <div>
                                         <img src="../assets/images/start-icon-negative.svg"
@@ -132,7 +147,8 @@
                                     <p>Start</p>
                                 </div>
                             </div>
-                            <div class="route-map-competition-content-entry">
+                            <div id="route-info-volkstriathlon-content-entry-finish"
+                                class="route-map-competition-content-entry">
                                 <div class="route-map-competition-content-entry-designation">
                                     <div>
                                         <img src="../assets/images/finish-icon-negative.svg"
@@ -151,15 +167,18 @@
                     <h3 class="text-secondary mt-20 tablet:hidden">LEGENDE DER WETTKAMPFSTRECKEN</h3>
 
                     <div class="route-map-competition">
-                        <div id="route-info-kindertriathlon-title" class="route-map-competition-title" onclick="onInfoTitleClick(event)">
+                        <div id="route-info-kindertriathlon-title" class="route-map-competition-title">
                             <p class="route-map-competition-title-text">Wettkampf<br
                                     class="mobile:hidden tablet:block desktop:hidden"> Kindertriathlon
                                 +
                                 Familienstaffel</p>
-                            <img id="route-info-kindertriathlon-title-img" src="../assets/images/minus-icon.svg" class="route-map-competition-title-icon">
+                            <img id="route-info-kindertriathlon-title-img" src="../assets/images/plus-icon.svg"
+                                class="route-map-competition-title-icon">
                         </div>
-                        <div id="route-info-kindertriathlon-content" class="route-map-competition-content tablet:hidden">
-                            <div class="route-map-competition-content-entry">
+                        <div id="route-info-kindertriathlon-content"
+                            class="route-map-competition-content tablet:hidden">
+                            <div id="route-info-kindertriathlon-content-entry-swimming"
+                                class="route-map-competition-content-entry">
                                 <div class="route-map-competition-content-entry-designation">
                                     <div>
                                         <img src="../assets/images/swimming-icon-negative.svg"
@@ -171,7 +190,8 @@
                                         50 m-Bahn</p>
                                 </div>
                             </div>
-                            <div class="route-map-competition-content-entry">
+                            <div id="route-info-kindertriathlon-content-entry-cycling-round"
+                                class="route-map-competition-content-entry">
                                 <div class="route-map-competition-content-entry-designation">
                                     <div>
                                         <img src="../assets/images/cycling-icon-negative.svg"
@@ -182,7 +202,8 @@
                                     <p>Rundstrecke Rad – 2,5 km</p>
                                 </div>
                             </div>
-                            <div class="route-map-competition-content-entry">
+                            <div id="route-info-kindertriathlon-content-entry-running-round"
+                                class="route-map-competition-content-entry">
                                 <div class="route-map-competition-content-entry-designation">
                                     <div>
                                         <img src="../assets/images/running-icon-negative.svg"
@@ -193,7 +214,8 @@
                                     <p>Rundstrecke laufen – 500 m</p>
                                 </div>
                             </div>
-                            <div class="route-map-competition-content-entry">
+                            <div id="route-info-kindertriathlon-content-entry-catering-1"
+                                class="route-map-competition-content-entry">
                                 <div class="route-map-competition-content-entry-designation">
                                     <div>
                                         <img src="../assets/images/catering-icon-negative.svg"
@@ -204,7 +226,8 @@
                                     <p>Verpflegungspunkte bei <br>Kindertriathlon + Familienstaffel</p>
                                 </div>
                             </div>
-                            <div class="route-map-competition-content-entry">
+                            <div id="route-info-kindertriathlon-content-entry-catering-2"
+                                class="route-map-competition-content-entry">
                                 <div class="route-map-competition-content-entry-designation">
                                 </div>
                                 <div class="route-map-competition-content-entry-description">
@@ -212,7 +235,8 @@
                                     <p>VP 1 bei Kilometer 1,5</p>
                                 </div>
                             </div>
-                            <div class="route-map-competition-content-entry">
+                            <div id="route-info-kindertriathlon-content-entry-start"
+                                class="route-map-competition-content-entry">
                                 <div class="route-map-competition-content-entry-designation">
                                     <div>
                                         <img src="../assets/images/start-icon-negative.svg"
@@ -223,7 +247,8 @@
                                     <p>Start</p>
                                 </div>
                             </div>
-                            <div class="route-map-competition-content-entry">
+                            <div id="route-info-kindertriathlon-content-entry-finish"
+                                class="route-map-competition-content-entry">
                                 <div class="route-map-competition-content-entry-designation">
                                     <div>
                                         <img src="../assets/images/finish-icon-negative.svg"
@@ -239,7 +264,8 @@
                     <img src="../assets/images/map-kindertrathlon-mobile.jpg" class="route-map tablet:hidden">
                 </div>
                 <div class="w-[52%] desktop:w-[55%]">
-                    <img src="../assets/images/map.svg" class="route-map hidden tablet:block">
+                    <object id="map" type="image/svg+xml" data="../assets/images/map.svg"
+                        class="route-map hidden tablet:block"></object>
                 </div>
             </div>
         </main>

@@ -3,7 +3,7 @@ function onMenuToggle() {
     if (!menu) {
         return;
     }
-    
+
     const menuIsVisible = !menu.classList.contains('hidden');
 
     if (menuIsVisible) {
