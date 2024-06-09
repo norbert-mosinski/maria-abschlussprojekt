@@ -1134,14 +1134,31 @@ h6 {
   flex-direction: column;
   --tw-bg-opacity: 1;
   background-color: rgb(61 80 58 / var(--tw-bg-opacity));
-  padding-top: 2rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 992px) {
-  .tender-competition {
+  .tender-competition:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .tender-competition:nth-child(even) {
     flex-direction: row;
+  }
+}
+
+.tender-competition-content {
+  padding-top: 2rem;
+}
+
+@media (min-width: 992px) {
+  .tender-competition-content {
+    width: 50%;
+  }
+
+  .tender-competition-img {
+    width: 50%;
   }
 }
 
@@ -1157,6 +1174,20 @@ h6 {
   .tender-competition-header {
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .tender-competition-header {
+    -moz-column-gap: 1.75rem;
+         column-gap: 1.75rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .tender-competition-header {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 
@@ -1177,6 +1208,13 @@ h6 {
 @media (min-width: 576px) {
   .tender-competition-header-designation-img {
     width: 7rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .tender-competition-header-designation-img {
+    height: auto;
+    width: 8rem;
   }
 }
 
@@ -1234,9 +1272,22 @@ h6 {
   }
 }
 
+@media (min-width: 992px) {
+  .tender-competition-entries {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .tender-competition-entries {
+    margin-top: 1.75rem;
+  }
+}
+
 .tender-competition-entry {
   display: flex;
   flex-direction: row;
+  align-items: center;
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
 }
@@ -1251,6 +1302,20 @@ h6 {
 .tender-competition-entry-img {
   height: 2rem;
   width: 2rem;
+}
+
+@media (min-width: 992px) {
+  .tender-competition-entry-img {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .tender-competition-entry-img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
 }
 
 .route-map {
@@ -1351,6 +1416,10 @@ h6 {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-10 {
@@ -1694,6 +1763,10 @@ h6 {
     margin-top: 4rem;
   }
 
+  .tablet\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .tablet\:mt-20 {
     margin-top: 5rem;
   }
@@ -1702,8 +1775,24 @@ h6 {
     margin-top: 9rem;
   }
 
+  .tablet\:mt-7 {
+    margin-top: 1.75rem;
+  }
+
   .tablet\:mt-9 {
     margin-top: 2.25rem;
+  }
+
+  .tablet\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .tablet\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .tablet\:mt-4 {
+    margin-top: 0.935rem;
   }
 
   .tablet\:block {
@@ -1718,8 +1807,16 @@ h6 {
     display: none;
   }
 
+  .tablet\:min-h-\[89vh\] {
+    min-height: 89vh;
+  }
+
   .tablet\:w-1\/2 {
     width: 50%;
+  }
+
+  .tablet\:w-auto {
+    width: auto;
   }
 
   .tablet\:flex-row {
@@ -1734,8 +1831,12 @@ h6 {
     flex-direction: column;
   }
 
-  .tablet\:justify-end {
-    justify-content: flex-end;
+  .tablet\:items-end {
+    align-items: flex-end;
+  }
+
+  .tablet\:justify-start {
+    justify-content: flex-start;
   }
 
   .tablet\:justify-center {
@@ -1765,9 +1866,19 @@ h6 {
     row-gap: 1.25rem;
   }
 
+  .tablet\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .tablet\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .tablet\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
   .tablet\:py-7 {
@@ -1791,6 +1902,11 @@ h6 {
     padding-top: 14rem;
   }
 
+  .tablet\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .tablet\:tracking-tighter {
     letter-spacing: -0.05em;
   }
@@ -1801,6 +1917,10 @@ h6 {
     margin-bottom: 5.5rem;
   }
 
+  .desktop\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .desktop\:mt-14 {
     margin-top: 3.5rem;
   }
@@ -1809,8 +1929,20 @@ h6 {
     margin-top: 5rem;
   }
 
+  .desktop\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .desktop\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .desktop\:mt-9 {
+    margin-top: 2.25rem;
+  }
+
+  .desktop\:mb-18 {
+    margin-bottom: 4.375rem;
   }
 
   .desktop\:block {
@@ -1819,6 +1951,10 @@ h6 {
 
   .desktop\:hidden {
     display: none;
+  }
+
+  .desktop\:min-h-\[87vh\] {
+    min-height: 87vh;
   }
 
   .desktop\:gap-x-10 {
@@ -1850,6 +1986,11 @@ h6 {
     padding-right: 3.5rem;
   }
 
+  .desktop\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
   .desktop\:pb-22 {
     padding-bottom: 5.5rem;
   }
@@ -1864,6 +2005,11 @@ h6 {
 
   .desktop\:pt-48 {
     padding-top: 12rem;
+  }
+
+  .desktop\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .desktop\:tracking-normal {

@@ -1,10 +1,18 @@
 @layer components {
     .tender-competition {
-        @apply flex tablet:flex-row flex-col bg-secondary text-white pt-8;
+        @apply flex even:tablet:flex-row odd:tablet:flex-row-reverse flex-col bg-secondary text-white;
+    }
+
+    .tender-competition-content {
+        @apply tablet:w-1/2 pt-8;
+    }
+
+    .tender-competition-img {
+        @apply tablet:w-1/2;
     }
 
     .tender-competition-header {
-        @apply flex flex-row gap-x-6 mobile:gap-x-6 items-center;
+        @apply flex flex-row gap-x-6 mobile:gap-x-6 items-center tablet:gap-x-7 desktop:gap-x-8;
     }
 
     .tender-competition-header-designation-inner {
@@ -12,7 +20,7 @@
     }
 
     .tender-competition-header-designation-img {
-        @apply mobile:w-28 w-16 object-cover object-right h-14;
+        @apply mobile:w-28 w-16 object-cover object-right h-14 desktop:h-auto desktop:w-32;
     }
 
     .tender-competition-header-designation-text {
@@ -28,14 +36,14 @@
     }
 
     .tender-competition-entries {
-        @apply flex flex-col mt-5 mobile:mt-6 mb-9 mobile:px-20 px-7 gap-y-6;
+        @apply flex flex-col mt-5 tablet:mt-6 desktop:mt-7 mobile:mt-6 mb-9 mobile:px-20 px-7 gap-y-6;
     }
 
     .tender-competition-entry {
-        @apply flex flex-row gap-x-6 mobile:gap-x-7;
+        @apply flex flex-row items-center gap-x-6 mobile:gap-x-7;
     }
 
     .tender-competition-entry-img {
-        @apply w-8 h-8;
+        @apply w-8 h-8 tablet:w-9 tablet:h-9 desktop:w-14 desktop:h-14;
     }
   }
