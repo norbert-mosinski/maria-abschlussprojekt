@@ -4,7 +4,7 @@
     }
 
     .route-map-competition {
-        @apply bg-secondary text-white px-4 mobile:px-5 py-8 mt-6;
+        @apply bg-secondary text-white px-4 mobile:px-5 desktop:px-6 py-8 mt-6;
     }
 
     .route-map-competition-title-text {

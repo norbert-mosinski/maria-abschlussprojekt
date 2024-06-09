@@ -1388,6 +1388,13 @@ h6 {
   }
 }
 
+@media (min-width: 1400px) {
+  .route-map-competition {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 .route-map-competition-title-text {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1579,14 +1586,6 @@ h6 {
   row-gap: 2rem;
 }
 
-.gap-y-12 {
-  row-gap: 3rem;
-}
-
-.gap-y-10 {
-  row-gap: 2.5rem;
-}
-
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(61 80 58 / var(--tw-bg-opacity));
@@ -1600,16 +1599,6 @@ h6 {
 .object-center {
   -o-object-position: center;
      object-position: center;
-}
-
-.object-left {
-  -o-object-position: left;
-     object-position: left;
-}
-
-.object-right {
-  -o-object-position: right;
-     object-position: right;
 }
 
 .px-4 {
@@ -1829,8 +1818,8 @@ h6 {
     margin-top: 0px;
   }
 
-  .tablet\:mt-11 {
-    margin-top: 2.75rem;
+  .tablet\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .tablet\:mt-16 {
@@ -1869,10 +1858,6 @@ h6 {
     margin-top: 2.25rem;
   }
 
-  .tablet\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
   .tablet\:block {
     display: block;
   }
@@ -1893,28 +1878,12 @@ h6 {
     width: 50%;
   }
 
-  .tablet\:w-auto {
-    width: auto;
-  }
-
-  .tablet\:w-1\/6 {
-    width: 16.666667%;
-  }
-
-  .tablet\:w-1\/5 {
-    width: 20%;
-  }
-
-  .tablet\:w-2\/5 {
-    width: 40%;
-  }
-
   .tablet\:w-3\/6 {
     width: 50%;
   }
 
-  .tablet\:w-2\/6 {
-    width: 33.333333%;
+  .tablet\:w-auto {
+    width: auto;
   }
 
   .tablet\:flex-row {
@@ -1960,24 +1929,12 @@ h6 {
          column-gap: 2.25rem;
   }
 
-  .tablet\:gap-y-14 {
-    row-gap: 3.5rem;
+  .tablet\:gap-y-10 {
+    row-gap: 2.5rem;
   }
 
   .tablet\:gap-y-5 {
     row-gap: 1.25rem;
-  }
-
-  .tablet\:gap-y-12 {
-    row-gap: 3rem;
-  }
-
-  .tablet\:gap-y-11 {
-    row-gap: 2.75rem;
-  }
-
-  .tablet\:gap-y-10 {
-    row-gap: 2.5rem;
   }
 
   .tablet\:px-32 {
@@ -2000,8 +1957,8 @@ h6 {
     padding-bottom: 1.75rem;
   }
 
-  .tablet\:pb-18 {
-    padding-bottom: 4.375rem;
+  .tablet\:pb-16 {
+    padding-bottom: 4rem;
   }
 
   .tablet\:pb-20 {
@@ -2012,8 +1969,8 @@ h6 {
     padding-bottom: 10rem;
   }
 
-  .tablet\:pl-14 {
-    padding-left: 3.5rem;
+  .tablet\:pl-9 {
+    padding-left: 2.25rem;
   }
 
   .tablet\:pr-9 {
@@ -2026,22 +1983,6 @@ h6 {
 
   .tablet\:pt-56 {
     padding-top: 14rem;
-  }
-
-  .tablet\:pl-12 {
-    padding-left: 3rem;
-  }
-
-  .tablet\:pl-10 {
-    padding-left: 2.5rem;
-  }
-
-  .tablet\:pl-9 {
-    padding-left: 2.25rem;
-  }
-
-  .tablet\:pb-16 {
-    padding-bottom: 4rem;
   }
 
   .tablet\:text-\[17px\] {
@@ -2089,10 +2030,6 @@ h6 {
 
   .desktop\:mt-9 {
     margin-top: 2.25rem;
-  }
-
-  .desktop\:mt-11 {
-    margin-top: 2.75rem;
   }
 
   .desktop\:block {
