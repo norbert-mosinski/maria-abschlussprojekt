@@ -1,14 +1,22 @@
 @layer components {
     .route-map {
-        @apply w-full mt-8 mobile:mt-12 h-72 bg-red-700;
+        @apply w-full mt-8 tablet:mt-0 mobile:mt-12;
     }
 
     .route-map-competition {
-        @apply bg-secondary text-white px-4 mobile:px-5 desktop:px-6 py-8 mt-6;
+        @apply bg-secondary text-white pb-8 mt-6 tablet:odd:mt-0;
+    }
+
+    .route-map-competition-title {
+        @apply tablet:bg-primary flex flex-row justify-between px-5 tablet:pl-5 tablet:pr-4 desktop:px-6 py-8 tablet:py-6 gap-x-1 items-center;
     }
 
     .route-map-competition-title-text {
         @apply font-bold text-xl;
+    }
+
+    .route-map-competition-title-icon {
+        @apply hidden tablet:block w-6;
     }
 
     .route-map-competition-title-text-br {
@@ -16,7 +24,7 @@
     }
 
     .route-map-competition-content {
-        @apply mt-5 flex flex-col gap-y-3;
+        @apply flex flex-col gap-y-3 px-4 mobile:px-5 desktop:px-6 tablet:mt-4 desktop:mt-6;
     }
 
     .route-map-competition-content-entry {
