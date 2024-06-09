@@ -1,18 +1,18 @@
 @layer components {
     .schedule-entry {
-        @apply flex tablet:flex-row flex-col;
+        @apply flex tablet:flex-row tablet:gap-x-8 desktop:gap-x-7 flex-col tablet:justify-between;
     }
 
     .schedule-entry-designation {
-        @apply relative w-32 mt-3;
+        @apply relative w-32 tablet:w-auto tablet:h-12 desktop:h-12;
     }
 
     .schedule-entry-designation-img {
-        @apply w-36 object-cover;
+        @apply object-contain w-full h-full;
     }
 
     .schedule-entry-designation-text {
-        @apply font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center;
+        @apply font-bold absolute top-0 left-0 w-full h-full flex justify-center items-center tablet:text-xl;
     }
 
     .schedule-entry-content {
@@ -20,7 +20,7 @@
     }
 
     .schedule-entry-content-text-hint {
-        @apply text-sm mt-3;
+        @apply text-sm mt-3 tablet:text-base;
     }
 
     .schedule-entry-content-text-hint-start {

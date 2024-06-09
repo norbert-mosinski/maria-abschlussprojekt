@@ -43,14 +43,15 @@
         </header>
 
         <main class="mt-8">
-            <div class="flex tablet:flex-row flex-col bg-secondary text-white gap-y-14 mx-4">
-                <div class="w-full px-5">
-                    <h1 class="mt-11">ZEITPLAN</h1>
-                    <div class="mt-7 flex flex-col gap-y-5 mobile:gap-y-11">
+            <div class="flex tablet:flex-row flex-col bg-secondary text-white gap-y-14 mx-4 tablet:mx-6 desktop:mx-14">
+                <div
+                    class="w-full px-5 mobile:pr-4 tablet:pl-9 tablet:pr-9 desktop:pl-18 desktop:pr-16 tablet:pb-16 desktop:pb-22">
+                    <h1 class="mt-11 tablet:mt-18 desktop:mt-20">ZEITPLAN</h1>
+                    <div
+                        class="mt-10 tablet:mt-10 desktop:mt-12 flex flex-col gap-y-5 mobile:gap-y-11 tablet:gap-y-10 desktop:gap-y-12">
                         <div class="schedule-entry">
                             <div class="schedule-entry-designation">
-                                <img src="../assets/images/content-box.svg"
-                                    class="schedule-entry-designation-img">
+                                <img src="../assets/images/content-box.svg" class="schedule-entry-designation-img">
                                 <p class="schedule-entry-designation-text">Ab 9 Uhr</p>
                             </div>
                             <div class="schedule-entry-content">
@@ -59,8 +60,7 @@
                         </div>
                         <div class="schedule-entry">
                             <div class="schedule-entry-designation">
-                                <img src="../assets/images/content-box.svg"
-                                    class="schedule-entry-designation-img">
+                                <img src="../assets/images/content-box.svg" class="schedule-entry-designation-img">
                                 <p class="schedule-entry-designation-text">10 Uhr</p>
                             </div>
                             <div class="schedule-entry-content">
@@ -69,8 +69,7 @@
                         </div>
                         <div class="schedule-entry">
                             <div class="schedule-entry-designation">
-                                <img src="../assets/images/content-box.svg"
-                                    class="schedule-entry-designation-img">
+                                <img src="../assets/images/content-box.svg" class="schedule-entry-designation-img">
                                 <p class="schedule-entry-designation-text">10:30
                                     Uhr</p>
                             </div>
@@ -91,8 +90,7 @@
                         </div>
                         <div class="schedule-entry">
                             <div class="schedule-entry-designation">
-                                <img src="../assets/images/content-box.svg"
-                                    class="schedule-entry-designation-img">
+                                <img src="../assets/images/content-box.svg" class="schedule-entry-designation-img">
                                 <p class="schedule-entry-designation-text">13 Uhr
                                 </p>
                             </div>
@@ -103,8 +101,7 @@
                         </div>
                         <div class="schedule-entry">
                             <div class="schedule-entry-designation">
-                                <img src="../assets/images/content-box.svg"
-                                    class="schedule-entry-designation-img">
+                                <img src="../assets/images/content-box.svg" class="schedule-entry-designation-img">
                                 <p class="schedule-entry-designation-text">15 Uhr
                                 </p>
                             </div>
@@ -124,8 +121,7 @@
                         </div>
                         <div class="schedule-entry">
                             <div class="schedule-entry-designation">
-                                <img src="../assets/images/content-box.svg"
-                                    class="schedule-entry-designation-img">
+                                <img src="../assets/images/content-box.svg" class="schedule-entry-designation-img">
                                 <p class="schedule-entry-designation-text">18 Uhr
                                 </p>
                             </div>
@@ -135,19 +131,23 @@
                         </div>
                         <div class="schedule-entry">
                             <div class="schedule-entry-designation">
-                                <img src="../assets/images/content-box.svg"
-                                    class="schedule-entry-designation-img">
+                                <img src="../assets/images/content-box.svg" class="schedule-entry-designation-img">
                                 <p class="schedule-entry-designation-text">18:15
                                     Uhr</p>
                             </div>
                             <div class="schedule-entry-content">
-                                <p>Siegerehrung mit Musik, Bühne vor dem Waldbad. Es legt auf: DJ Yankee</p>
+                                <p class="tracking-tighter desktop::tracking-normal tablet:text-[17px]">Siegerehrung mit
+                                    Musik, Bühne vor dem<br class="mobile:hidden"> Waldbad. Es legt auf:<br
+                                        class="hidden mobile:block tablet:hidden"> DJ Yankee</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img class="w-1/4 hidden" src="../assets/images/stopwatch-portrait.jpg">
-                <img class="w-full tablet:hidden" src="../assets/images/stopwatch-landscape.jpg">
+                <picture class="w-full tablet:w-3/6">
+                    <source srcset="../assets/images/stopwatch-portrait.jpg" media="(min-width: 992px)">
+                    <img class="w-full tablet:w-auto h-full object-cover object-center"
+                        src="../assets/images/stopwatch-landscape.jpg">
+                </picture>
             </div>
         </main>
     </div>
