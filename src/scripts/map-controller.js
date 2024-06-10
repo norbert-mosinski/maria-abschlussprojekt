@@ -127,8 +127,9 @@ function onInfoTitleHover(event) {
 
 function onInfoTitleLeave(event) {
     const titleId = event.currentTarget.id;
+    const oppositeTitleId = titleOppositeIdMapping[titleId];
 
-    toggleInfo(titleId);
+    toggleInfo(oppositeTitleId);
 }
 
 function toggleInfo(titleId) {

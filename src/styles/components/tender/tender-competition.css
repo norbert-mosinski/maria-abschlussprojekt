@@ -24,7 +24,7 @@
     }
 
     .tender-competition-header-designation-text {
-        @apply absolute top-0 left-0 w-full h-full flex justify-center items-center text-4xl mobile:text-5xl;
+        @apply absolute top-0 left-0 w-full h-full flex justify-center items-center text-4xl mobile:text-5xl font-extrabold;
     }
 
     .tender-competition-header-title {
@@ -36,7 +36,7 @@
     }
 
     .tender-competition-entries {
-        @apply flex flex-col mt-5 tablet:mt-6 desktop:mt-7 mobile:mt-6 mb-9 mobile:px-20 px-7 gap-y-6;
+        @apply flex flex-col mt-5 tablet:mt-6 desktop:mt-7 mobile:mt-6 mb-9 mobile:px-16 px-5 gap-y-6;
     }
 
     .tender-competition-entry {
@@ -44,6 +44,6 @@
     }
 
     .tender-competition-entry-img {
-        @apply w-8 h-8 tablet:w-9 tablet:h-9 desktop:w-14 desktop:h-14;
+        @apply w-12 h-12 tablet:w-9 tablet:h-9 desktop:w-14 desktop:h-14;
     }
   }

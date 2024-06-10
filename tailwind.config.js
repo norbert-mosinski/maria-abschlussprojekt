@@ -28,7 +28,7 @@ module.exports = {
     },
     fontFamily: {
       'fira-sans': ['fira-sans'],
-      'nuito-sans': ['nuito-sans'],
+      'nunito-sans': ['nunito-sans'],
     },
   },
   plugins: [],
