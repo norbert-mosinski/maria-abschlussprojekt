@@ -24,6 +24,6 @@
     }
 
     .schedule-entry-content-text-hint-start {
-        @apply font-bold;
+        @apply font-bold tablet:text-[15px];
     }
   }

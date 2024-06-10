@@ -34,10 +34,12 @@
 
         <main>
             <header class="global-header">
-                <picture>
-                    <source srcset="../assets/images/logo.svg" media="(min-width: 992px)">
-                    <img src="../assets/images/logo-wordmark.svg" class="global-header-img-logo">
-                </picture>
+                <a href="./home.html">
+                    <picture>
+                        <source srcset="../assets/images/logo.svg" media="(min-width: 992px)">
+                        <img src="../assets/images/logo-wordmark.svg" class="global-header-img-logo">
+                    </picture>
+                </a>
                 <button onclick="onMenuToggle()" class="global-header-btn-global-menu">
                     <img src="../assets/images/burger-menu.svg" class="global-header-img-global-menu">
                 </button>
@@ -48,13 +50,13 @@
 
                 <div class="mt-5 tablet:mt-7 desktop:mt-9 flex flex-col gap-y-8">
                     <div class="impressum-content">
-                        <h5 class="impressum-content-title">SV Trainingen e. V.</h5>
+                        <p class="impressum-content-title">SV Trainingen e. V.</p>
                         <p>Übungsstraße 1</p>
                         <p>98765 Trainingen</p>
                     </div>
 
                     <div class="impressum-content">
-                        <h5 class="impressum-content-title">Vertretungsberechtigter Vorstand:</h5>
+                        <p class="impressum-content-title">Vertretungsberechtigter Vorstand:</p>
                         <p>Ulrike Maschter</p>
                         <p>Tel: 01234/5678-11</p>
                         <p>Amtsgericht Lörrach. VR 1001</p>
@@ -65,7 +67,9 @@
     </div>
 
     <footer class="global-footer">
-        <img src="../assets/images/logo-negative.svg" class="global-footer-img">
+        <a href="./home.html">
+            <img src="../assets/images/logo-negative.svg" class="global-footer-img">
+          </a>
         <div class="global-footer-entries">
             <a href="#">Kontakt</a>
             <a href="#">Datenschutz</a>

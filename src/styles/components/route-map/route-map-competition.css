@@ -4,7 +4,7 @@
     }
 
     .route-map-competition {
-        @apply bg-secondary text-white mt-6 tablet:odd:mt-0;
+        @apply bg-secondary text-white mt-6 tablet:odd:mt-0 tablet:cursor-pointer;
     }
 
     .route-map-competition-title {

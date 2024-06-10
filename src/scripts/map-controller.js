@@ -3,6 +3,11 @@ const titleContentIdMapping = {
     'route-info-kindertriathlon-title': 'route-info-kindertriathlon-content',
 }
 
+const titleMapMapping = {
+    'route-info-volkstriathlon-title': 'map1',
+    'route-info-kindertriathlon-title': 'map2',
+}
+
 const titleOppositeIdMapping = {
     'route-info-volkstriathlon-title': 'route-info-kindertriathlon-title',
     'route-info-kindertriathlon-title': 'route-info-volkstriathlon-title',
@@ -76,9 +81,9 @@ const mapElements = {
     bikeRoute2: 'rundstrecke-rad-02',
 }
 
-const titleIdMapElementMapping = {
-    'route-info-volkstriathlon-title': map1Elements,
-    'route-info-kindertriathlon-title': map2Elements,
+const mapElementMapMapping = {
+    'map1': map1Elements,
+    'map2': map2Elements,
 };
 
 function onInfoTitleClick(event) {
@@ -109,44 +114,57 @@ function onInfoTitleClick(event) {
         return;
     }
 
-
     toggleContent(contentId);
     toggleContent(oppositeContentId);
 
     toggleTitleImg(imgId);
     toggleTitleImg(oppositeImgId);
-
-    toggleInfo(titleId);
 }
 
 function onInfoTitleHover(event) {
     const titleId = event.currentTarget.id;
+    const referencedMap = titleMapMapping[titleId];
+    const activeMap = getOpenMap();
 
-    toggleInfo(titleId);
+    if (referencedMap !== activeMap) {
+        hideMapElements(mapElementMapMapping[activeMap]);
+        showMapElements(mapElementMapMapping[referencedMap]);
+    }
+}
+
+function getOpenMap() {
+    const volksTitle = document.getElementById('route-info-volkstriathlon-content');
+    const volksTitleIsActive = !volksTitle.classList.contains('tablet:hidden');
+
+    return volksTitleIsActive ? 'map1' : 'map2';
 }
 
 function onInfoTitleLeave(event) {
     const titleId = event.currentTarget.id;
-    const oppositeTitleId = titleOppositeIdMapping[titleId];
+    const referencedMap = titleMapMapping[titleId];
+    const activeMap = getOpenMap();
 
-    toggleInfo(oppositeTitleId);
+    if (referencedMap !== activeMap) {
+        hideMapElements(mapElementMapMapping[referencedMap]);
+        showMapElements(mapElementMapMapping[activeMap]);
+    }
 }
 
-function toggleInfo(titleId) {
+function toggleMap() {
+    let mapElementsToHide = [];
+    let mapElementsToShow = [];
 
-    const contentId = titleContentIdMapping[titleId];
-
-    if (!contentId) {
-        console.error(`No content id found for title id: ${titleId}`);
-        return;
+    const activeMap = getOpenMap();
+    if (activeMap === 'map1') {
+        mapElementsToHide = map1Elements;
+        mapElementsToShow = map2Elements;
+    }
+    else {
+        mapElementsToHide = map2Elements;
+        mapElementsToShow = map1Elements;
     }
 
-    const oppositeTitleId = titleOppositeIdMapping[titleId];
-
-    const mapElementsToHide = titleIdMapElementMapping[oppositeTitleId];
     hideMapElements(mapElementsToHide);
-
-    const mapElementsToShow = titleIdMapElementMapping[titleId];
     showMapElements(mapElementsToShow);
 }
 
