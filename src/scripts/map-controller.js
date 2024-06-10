@@ -245,8 +245,7 @@ function showMapElements(mapElementsToShow) {
     mapElementsToShow = mapElementsToShow || Object.keys(mapElements);
 
     mapElementsToShow.forEach(mapElement => {
-        const map = getMap();
-        const element = map.getElementById(mapElements[mapElement]);
+        const element = document.getElementById(mapElements[mapElement]);
 
         if (!element) {
             console.error(`No element found for element: ${mapElement}, ${mapElement[mapElement]}`);
@@ -261,8 +260,7 @@ function hideMapElements(mapElementsToHide) {
     mapElementsToHide = mapElementsToHide || Object.keys(mapElements);
 
     mapElementsToHide.forEach(mapElement => {
-        const map = getMap();
-        const element = map.getElementById(mapElements[mapElement]);
+        const element = document.getElementById(mapElements[mapElement]);
         if (!element) {
             console.error(`No element found for element: ${mapElement}, ${mapElements[mapElement]}`);
             return;
